@@ -1,0 +1,117 @@
+backend:
+  name: github
+  repo: chosww/ai-risk
+media_folder: src/assets/uploads
+public_folder: /assets/uploads
+i18n:
+  locales: [en, fr]
+  default_locale: en
+  initial_locales: default
+
+collections:
+  - label: Pages
+    label_singular: Page
+    name: pages
+    icon: article
+    thumbnail: false
+    i18n:
+      structure: multiple_folders
+    folder: src/collections/pages/
+    extension: md
+    slug: "{{fields._slug | localize}}"
+    view_filters:
+      - label: Drafts
+        field: draft
+        pattern: true
+    sortable_fields:
+      fields: [title, order]
+      default:
+          field: order
+          direction: ascending
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        i18n: true
+      - label: Short Title
+        name: shortTitle
+        widget: string
+        i18n: true
+        required: false
+      - label: Draft
+        name: draft
+        widget: boolean
+        i18n: duplicate
+        required: false
+      - label: Language
+        name: lang
+        widget: hidden
+        default: "{{locale}}"
+      - label: Navigation Order
+        name: order
+        widget: number
+        i18n: duplicate
+        required: false
+      - label: Parent
+        name: parent
+        widget: relation
+        i18n: true
+        collection: pages
+        value_field: translationKey
+        search_fields: [title]
+        display_fields: [title]
+        multiple: false
+        required: false
+      - label: Layout
+        name: layout
+        widget: hidden
+        i18n: duplicate
+        default: layouts/base
+        required: true
+      - label: Excerpt
+        name: excerpt
+        widget: text
+        i18n: true
+        required: false
+      - label: Preview Image
+        name: previewImage
+        widget: image
+        i18n: duplicate
+        required: false
+        hint: This image should be 1200 by 630 pixels and will be used as a preview image when this page is shared on social media.
+      - label: Preview Image Alt Text
+        name: previewImageAlt
+        widget: string
+        i18n: true
+        required: false
+      - label: Banner Title
+        name: bannerTitle
+        widget: text
+        i18n: true
+        required: false
+      - label: Banner Text
+        name: bannerText
+        widget: text
+        i18n: true
+        required: false
+      - label: Banner Image
+        name: bannerImage
+        widget: image
+        i18n: duplicate
+        required: false
+      - label: Banner Image Alt Text
+        name: bannerImageAlt
+        widget: text
+        i18n: true
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
+        i18n: true
+        buttons: [bold, italic, link, heading-two, heading-three, heading-four, heading-five, heading-six, quote, bulleted-list, numbered-list]
+      - label: Outro
+        name: outro
+        widget: markdown
+        i18n: true
+        buttons: [bold, italic, link, heading-two, heading-three, heading-four, heading-five, heading-six, quote, bulleted-list, numbered-list]
+        required: false
