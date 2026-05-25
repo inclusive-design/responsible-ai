@@ -1,5 +1,4 @@
 import { env } from 'node:process';
-import { execSync } from 'node:child_process';
 import { IdAttributePlugin, RenderPlugin } from '@11ty/eleventy';
 import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
 import fontAwesomePlugin from '@11ty/font-awesome';
@@ -49,6 +48,7 @@ export default function eleventy(eleventyConfig) {
 		eleventyConfig.addCollection(`pages_${lang}`, (collection) => collection.getFilteredByGlob(`src/collections/pages/${lang}/*.md`));
 	}
 
+	eleventyConfig.addFilter('objectArrayPush', objectArrayPush);
 	eleventyConfig.addFilter('findTranslationKey', findTranslationKeyFilter);
 	eleventyConfig.addFilter('markdown', markdownFilter);
 

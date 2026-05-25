@@ -1,10 +1,10 @@
 {
-  "name": "world-bank",
-  "version": "1.0.0",
-  "description": "",
-  "main": "eleventy.config.js",
-  "type": "module",
-  "scripts": {
+	"name": "@inclusive-design/ai-risk",
+	"version": "2026.5.0",
+	"description": "",
+	"main": "eleventy.config.js",
+	"type": "module",
+	"scripts": {
 		"build": "npm-run-all -l clean -s build:eleventy",
 		"build:eleventy": "eleventy",
 		"clean": "rimraf _site",
@@ -50,5 +50,17 @@
 		"markdownlint-cli2": "^0.22.0",
 		"npm-run-all2": "^9.0.0",
 		"pagefind": "^1.4.0"
+	},
+	"lint-staged": {
+		"*.css": [
+			"stylelint --fix"
+		],
+		"*.{cjs,js,json,mjs}": [
+			"eslint --fix"
+		],
+		"*.md": [
+			"eslint --fix",
+			"markdownlint-cli2 --fix"
+		]
 	}
 }
