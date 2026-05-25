@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: chosww/ai-risk
+  repo: inclusive-design/ai-risk
 media_folder: src/assets/uploads
 public_folder: /assets/uploads
 i18n:
@@ -205,4 +205,3 @@ collections:
         widget: hidden
         default: "{{uuid_shorter}}"
         i18n: duplicate
-
