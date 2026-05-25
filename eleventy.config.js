@@ -1,5 +1,4 @@
 import { env } from 'node:process';
-import { execSync } from 'node:child_process';
 import { IdAttributePlugin, RenderPlugin } from '@11ty/eleventy';
 import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
 import fontAwesomePlugin from '@11ty/font-awesome';
@@ -38,17 +37,18 @@ export default function eleventy(eleventyConfig) {
 	});
 
 	for (const lang of ['en', 'fr']) {
-		eleventyConfig.addCollection(`processes_${lang}`, (collection) => collection.getFilteredByGlob(`src/collections/processes/${lang}/*.md`).toSorted((a, b) => a.data.order - b.data.order));
+		eleventyConfig.addCollection(`sectors_${lang}`, (collection) => collection.getFilteredByGlob(`src/collections/sectors/${lang}/*.md`).toSorted((a, b) => a.data.title - b.data.title));
 
 		eleventyConfig.addCollection(
-			`barriers_${lang}`,
+			`risks_${lang}`,
 			(collection) => collection
-				.getFilteredByGlob(`src/collections/barriers/${lang}/*.md`)
+				.getFilteredByGlob(`src/collections/risks/${lang}/*.md`)
 				.toSorted((a, b) => a.data.title.localeCompare(b.data.title)),
 		);
 		eleventyConfig.addCollection(`pages_${lang}`, (collection) => collection.getFilteredByGlob(`src/collections/pages/${lang}/*.md`));
 	}
 
+	eleventyConfig.addFilter('objectArrayPush', objectArrayPush);
 	eleventyConfig.addFilter('findTranslationKey', findTranslationKeyFilter);
 	eleventyConfig.addFilter('markdown', markdownFilter);
 

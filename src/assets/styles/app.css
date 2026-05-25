@@ -16,6 +16,8 @@
 
 /* Components */
 @import url("./components/_disclosure.css");
+@import url("./components/_item-card.css");
+@import url("./components/_filters.css");
 @import url("./components/_link-button.css");
 @import url("./components/_navigation.css");
 

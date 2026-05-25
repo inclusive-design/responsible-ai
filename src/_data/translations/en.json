@@ -1,14 +1,21 @@
 {
-	"browse-risks": "Browse Risks",
-	"browse-sectors": "Browse Sectors",
+	"applied-filters": "Applied Filters",
+	"browse-benefits": "Browse by Benefits",
+	"browse-risks": "Browse by Risks",
 	"cc-by": "Creative Commons Attribution 4.0 License",
 	"contact-us": "Contact Us",
 	"contact-us-address": "Address",
 	"contact-us-email": "Email",
 	"contact-us-phone": "Phone",
+	"filtered-risks": "risk/risks",
+	"filters": "Filters",
 	"header-intro": "An <a href='https://idrc.ocadu.ca/' rel='external'>Inclusive Design Research Centre</a> Project",
 	"header-intro-short": "<a href='https://idrc.ocadu.ca/' rel='external'>An IDRC Project</a>",
 	"license-statement": "This work is licensed under a ",
+	"references": "References",
+	"risks": "Risks",
+	"risk-slug": "risks",
+	"sectors": "Sectors",
 	"skip-to-content": "Skip to content",
 	"toc": "Table of Contents"
 }
