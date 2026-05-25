@@ -3,7 +3,7 @@
 }
 
 .sectors,
-.barrier,
+.benefit,
 .risks,
 .glossary,
 .guidelines,
@@ -50,8 +50,8 @@
 	background-color: var(--fl-bgColor, var(--color-guidelines-blue-light));
 }
 
-.barrier nav,
-.barrier article,
+.benefit nav,
+.benefit article,
 .guidelines nav,
 .guidelines article,
 .process nav,
@@ -86,21 +86,21 @@
     gap: 1.3rem
 }
 
-.barrier nav,
+.benefit nav,
 .guidelines nav,
 .process nav,
 .action nav {
 	background-color: var(--fl-bgColor, var(--color-indigo-100));
 }
 
-.barrier nav>h2,
+.benefit nav>h2,
 .guidelines nav>h2,
 .process nav>h2,
 .action nav>h2 {
 	display: none;
 }
 
-.barrier nav ul ul,
+.benefit nav ul ul,
 .guidelines nav ul ul,
 .process nav ul ul,
 .action nav ul ul {
@@ -111,7 +111,7 @@
 	}
 }
 
-.barrier inclusive-disclosure h3,
+.benefit inclusive-disclosure h3,
 .process inclusive-disclosure h3,
 .action inclusive-disclosure h3 {
 	font-size: var(--step-2);
@@ -137,21 +137,21 @@
 }
 
 .action h2,
-.barrier h2 {
+.benefit h2 {
     align-items: center;
     display: flex;
     gap: 1.3rem;
 }
 
 .action h2 svg,
-.barrier h2 svg {
+.benefit h2 svg {
 	block-size: 3.5rem;
 	fill: var(--fl-fgColor, --color-black);
 	inline-size: 3.5rem;
 	stroke: var(--fl-fgColor, black);
 }
 
-.barrier h2 svg {
+.benefit h2 svg {
 	block-size: 5rem;
 	inline-size: 5rem;
 }
@@ -172,21 +172,21 @@
 	}
 }
 
-.barrier nav inclusive-disclosure>*,
+.benefit nav inclusive-disclosure>*,
 .guidelines nav inclusive-disclosure>*,
 .process nav inclusive-disclosure>*,
 .action nav inclusive-disclosure>* {
 	padding-inline: var(--common-inline-padding);
 }
 
-.barrier nav inclusive-disclosure [aria-expanded],
+.benefit nav inclusive-disclosure [aria-expanded],
 .guidelines nav inclusive-disclosure [aria-expanded],
 .process nav inclusive-disclosure [aria-expanded],
 .action nav inclusive-disclosure [aria-expanded] {
 	box-shadow: none;
 }
 
-.barrier nav inclusive-disclosure [aria-expanded]::after,
+.benefit nav inclusive-disclosure [aria-expanded]::after,
 .guidelines nav inclusive-disclosure [aria-expanded]::after,
 .process nav inclusive-disclosure [aria-expanded]::after,
 .action nav inclusive-disclosure [aria-expanded]::after {
@@ -311,28 +311,28 @@
 }
 
 @media (width >=70.875rem) {
-	.barrier nav>h2,
+	.benefit nav>h2,
 	.guidelines nav>h2,
 	.process nav>h2,
 	.action nav>h2 {
 		display: block;
 	}
 
-	.barrier nav inclusive-disclosure>*,
+	.benefit nav inclusive-disclosure>*,
 	.guidelines nav inclusive-disclosure>*,
 	.process nav inclusive-disclosure>*,
 	.action nav inclusive-disclosure>* {
 		padding-inline: 0;
 	}
 
-	.barrier nav inclusive-disclosure [aria-expanded],
+	.benefit nav inclusive-disclosure [aria-expanded],
 	.guidelines nav inclusive-disclosure [aria-expanded],
 	.process nav inclusive-disclosure>[aria-expanded],
 	.action nav inclusive-disclosure>[aria-expanded] {
 		display: none;
 	}
 
-	.barrier nav inclusive-disclosure [aria-expanded]+*,
+	.benefit nav inclusive-disclosure [aria-expanded]+*,
 	.guidelines nav inclusive-disclosure [aria-expanded]+*,
 	.process nav inclusive-disclosure [aria-expanded]+*,
 	.action nav inclusive-disclosure [aria-expanded]+* {
@@ -363,21 +363,21 @@
 	}
 }
 
-.barrier article,
+.benefit article,
 .guidelines article .process article,
 .action article {
 	padding-block: 2.125rem 5rem;
 	padding-inline: var(--common-inline-padding);
 }
 
-.barrier article>*,
+.benefit article>*,
 .guidelines article>*,
 .process article>*,
 .action article>* {
 	max-width: 41.875rem;
 }
 
-.barrier article>h2,
+.benefit article>h2,
 .guidelines article>h2,
 .process article>h2,
 .action article>h2 {
@@ -462,7 +462,7 @@
 }
 
 @media (width >=70.875rem) {
-	.barrier .content,
+	.benefit .content,
 	.guidelines .content,
 	.process .content,
 	.action .content {
@@ -473,8 +473,8 @@
 		width: 100%;
 	}
 
-	.barrier nav,
-	.barrier article,
+	.benefit nav,
+	.benefit article,
 	.guidelines nav,
 	.guidelines article,
 	.process nav,
@@ -496,7 +496,7 @@
 		margin-block-start: 7.5rem;
 	}
 
-	.barrier article,
+	.benefit article,
 	.guidelines article,
 	.process article,
 	.action article {

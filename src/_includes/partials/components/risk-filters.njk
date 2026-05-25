@@ -1,0 +1,18 @@
+<div id="filters" class="filters flow">
+    <h3>{% __ 'filters' %}</h3>
+    <div class="flow">
+    <fieldset>
+        <legend>{% __ 'sectors' %}</legend>
+        <div id="stages">
+            <ul id="filter-sector" class="stages">
+                {% for sector in collections['sectors_' + lang] %}
+                    <li>
+                        <input type="checkbox" id="{{ sector.data.uuid }}" name="sector" value="{{ sector.data.uuid }}" data-filter-key="sector"/>
+                        <label for="{{ sector.data.uuid }}">{{ sector.data.title }}</label>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </fieldset>
+    </div>
+</div>
