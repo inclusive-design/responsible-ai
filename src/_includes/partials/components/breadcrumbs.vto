@@ -1,0 +1,16 @@
+<nav aria-label="{{ __ 'breadcrumbs', {}, {lang, translations} }}" class="breadcrumb">
+  <ol class="breadcrumbs" role="list">
+    {{ for breadcrumbLink of breadcrumbLinks }}
+    <li>
+      <a href="{{ breadcrumbLink.url }}">
+        {{ breadcrumbLink.title }}
+      </a>
+    </li>
+    {{ /for }}
+    <li>
+      <a href="{{ url }}" aria-current="page">
+        {{ title }}
+      </a>
+    </li>
+  </ol>
+</nav>

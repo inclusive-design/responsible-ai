@@ -7,6 +7,11 @@ i18n:
   locales: [en, fr]
   default_locale: en
   initial_locales: default
+field_defaults:
+  richtext:
+    minimal: true
+    buttons: [bold, italic, link]
+    editor_components: []
 
 collections:
   - label: Pages
@@ -73,102 +78,119 @@ collections:
         widget: text
         i18n: true
         required: false
-      - label: Preview Image
-        name: previewImage
-        widget: image
-        i18n: duplicate
-        required: false
-        hint: This image should be 1200 by 630 pixels and will be used as a preview image when this page is shared on social media.
-      - label: Preview Image Alt Text
-        name: previewImageAlt
-        widget: string
-        i18n: true
-        required: false
-      - label: Banner Title
-        name: bannerTitle
-        widget: text
-        i18n: true
-        required: false
-      - label: Banner Text
-        name: bannerText
-        widget: text
-        i18n: true
-        required: false
-      - label: Banner Image
-        name: bannerImage
-        widget: image
-        i18n: duplicate
-        required: false
-      - label: Banner Image Alt Text
-        name: bannerImageAlt
-        widget: text
-        i18n: true
-        required: false
+      # - label: Preview Image
+      #   name: previewImage
+      #   widget: image
+      #   i18n: duplicate
+      #   required: false
+      #   hint: This image should be 1200 by 630 pixels and will be used as a preview image when this page is shared on social media.
+      # - label: Preview Image Alt Text
+      #   name: previewImageAlt
+      #   widget: string
+      #   i18n: true
+      #   required: false
+      # - label: Banner Title
+      #   name: bannerTitle
+      #   widget: text
+      #   i18n: true
+      #   required: false
+      # - label: Banner Text
+      #   name: bannerText
+      #   widget: text
+      #   i18n: true
+      #   required: false
+      # - label: Banner Image
+      #   name: bannerImage
+      #   widget: image
+      #   i18n: duplicate
+      #   required: false
+      # - label: Banner Image Alt Text
+      #   name: bannerImageAlt
+      #   widget: text
+      #   i18n: true
+      #   required: false
       - label: Body
         name: body
         widget: markdown
         i18n: true
-        buttons: [bold, italic, link, heading-two, heading-three, heading-four, heading-five, heading-six, quote, bulleted-list, numbered-list]
-      - label: Outro
-        name: outro
-        widget: markdown
-        i18n: true
-        buttons: [bold, italic, link, heading-two, heading-three, heading-four, heading-five, heading-six, quote, bulleted-list, numbered-list]
-        required: false
+        buttons: [bold, italic, link, heading-two, heading-three]
+      # - label: Outro
+      #   name: outro
+      #   widget: markdown
+      #   i18n: true
+      #   buttons: [bold, italic, link, heading-two, heading-three]
+      #   required: false
   - label: Benefits
     label_singular: Benefit
     name: benefit
     i18n:
       structure: multiple_folders
     folder: src/collections/benefits/
-    icon: b
-    slug: "{{uuid_short}}"
+    icon: check_circle
+    slug: "{{index}}"
+    summary: '{{index}}. {{title}}'
     fields:
+      - label: Index
+        name: index
+        widget: string
+        i18n: duplicate
       - label: Title
         name: title
         widget: string
         i18n: true
-      - name: uuid
-        widget: hidden
-        default: "{{uuid_shorter}}"
-        i18n: duplicate
+      - label: Excerpt
+        name: excerpt
+        widget: text
+        i18n: true
       - label: Benefit
         name: benefit
         widget: markdown
-        required: true
         i18n: true
       - label: Caution
         name: caution
         widget: markdown
-        required: true
         i18n: true
-      - label: Sector
-        name: sector
-        widget: relation
-        collection: sectors
-        value_field: uuid
-        search_fields: [title]
-        display_fields: [title]
+      - label: Illustrative Examples
+        label_singular: Example
+        name: examples
+        widget: list
         required: false
-        multiple: false
-        i18n: duplicate
+        i18n: true
+        fields:
+          - label: Title
+            name: title
+            widget: string
+            i18n: true
+          - label: Benefit
+            name: benefit
+            widget: markdown
+            i18n: true
+          - label: Caution
+            name: caution
+            widget: markdown
+            i18n: true
   - label: Risks
     label_singular: Risk
     name: risks
     i18n:
       structure: multiple_folders
     folder: src/collections/risks/
-    icon: x
-    slug: "{{uuid_short}}"
+    icon: warning
+    slug: "{{index}}"
+    summary: '{{index}}. {{title}}'
     fields:
+      - label: Index
+        name: index
+        widget: string
+        i18n: duplicate
       - label: Title
         name: title
         widget: string
         i18n: true
-      - name: uuid
-        widget: hidden
-        default: "{{uuid_shorter}}"
-        i18n: duplicate
+      - label: Excerpt
+        name: excerpt
+        widget: text
+        i18n: true
       - label: Risk
         name: risk
         widget: markdown
@@ -179,29 +201,30 @@ collections:
         widget: markdown
         required: true
         i18n: true
-      - label: Sector
-        name: sector
-        widget: relation
-        collection: sectors
-        value_field: uuid
-        search_fields: [title]
-        display_fields: [title]
+      - label: Illustrative Examples
+        label_singular: Example
+        name: examples
+        widget: object
         required: false
-        multiple: false
-        i18n: duplicate
-  - label: Sectors
-    label_singular: Sector
-    name: sectors
-    i18n:
-      structure: multiple_folders
-    folder: src/collections/sectors/
-    icon: s
-    fields:
-      - label: Title
-        name: title
-        widget: string
         i18n: true
-      - name: uuid
-        widget: hidden
-        default: "{{uuid_shorter}}"
-        i18n: duplicate
+        fields:
+          - label: Education
+            name: education
+            widget: markdown
+            i18n: true
+            required: false
+          - label: Employment
+            name: employment
+            widget: markdown
+            i18n: true
+            required: false
+          - label: Healthcare
+            name: healthcare
+            widget: markdown
+            i18n: true
+            required: false
+          - label: Services
+            name: services
+            widget: markdown
+            i18n: true
+            required: false

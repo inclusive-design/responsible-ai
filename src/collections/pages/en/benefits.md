@@ -3,17 +3,11 @@ translationKey: benefits
 title: Browse by Benefits
 shortTitle: Browse Benefits
 draft: false
-layout: layouts/benefits
+lang: en
+order: 2
+parent: index
+layout: layouts/base
 excerpt: ''
-previewImage: ''
-previewImageAlt: ''
-bannerTitle: ''
-bannerText: |-
-  
-
-bannerImage: ''
-bannerImageAlt: ''
-outro: ''
 ---
 
 Not applicable.

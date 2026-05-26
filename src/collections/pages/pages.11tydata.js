@@ -15,17 +15,7 @@ export default {
 			};
 		},
 		permalink(data) {
-			if (data.translationKey === 'browse') {
-				return false;
-			}
-
-			let parent = false;
-
-			if (data.parent) {
-				parent = data.parent === 'browse' ? 'guidelines' : data.parent;
-			}
-
-			data.slug = parent ? `${__(parent, {}, data)}/${data.page.fileSlug}` : data.page.fileSlug;
+			data.slug = data.page.fileSlug;
 			return generatePermalink(data, 'pages');
 		},
 	},

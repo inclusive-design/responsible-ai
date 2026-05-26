@@ -1,5 +1,5 @@
 {
-	"name": "@inclusive-design/ai-risk",
+	"name": "@inclusive-design/responsible-ai",
 	"version": "2026.5.0",
 	"description": "",
 	"main": "eleventy.config.js",
@@ -24,16 +24,19 @@
 		"@11ty/eleventy": "^3.1.2",
 		"@11ty/eleventy-fetch": "^5.1.1",
 		"@11ty/eleventy-navigation": "^1.0.0",
+		"@11ty/eleventy-plugin-vite": "^8.0.0",
 		"@11ty/font-awesome": "^1.0.1",
 		"@inclusive-design/eleventy-plugin-inclusive-footnotes": "^1.0.0",
 		"@zachleat/filter-container": "greatislander/filter-container#feat/paginated-results",
 		"eleventy-plugin-fluid": "^3.2.0",
+		"eleventy-plugin-vento": "^5.0.0",
 		"i18n-js": "^4.5.3",
 		"infusion": "^4.8.0",
 		"lodash": "^4.18.1",
 		"markdown-it": "^14.1.1",
 		"rimraf": "^6.0",
-		"rosetta": "^1.1.0"
+		"rosetta": "^1.1.0",
+		"vite": "^8.0.14"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^21.0.0",
@@ -41,6 +44,8 @@
 		"@inclusive-design/eslint-config": "^0.5.0",
 		"@inclusive-design/markdownlint-config": "^0.1.0",
 		"@inclusive-design/stylelint-config": "^0.1.0",
+		"@sugarcube-sh/cli": "^0.1.14",
+		"@sugarcube-sh/vite": "^0.1.15",
 		"cross-env": "^10.0.0",
 		"debug": "^4.3.5",
 		"eslint": "^10.2.1",

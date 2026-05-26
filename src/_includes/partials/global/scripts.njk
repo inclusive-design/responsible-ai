@@ -1,9 +1,0 @@
-{% uioScripts %}
-<script type="text/javascript" src="/assets/scripts/app.js" defer></script>
-{% if translationKey == "risks" or translationKey == "benefits" %}
-<script type="text/javascript" src="/assets/scripts/filter.js" defer></script>
-{% endif %}
-<script type="module">
-    await import('/pagefind/pagefind-highlight.js');
-    new PagefindHighlight({ highlightParam: "highlight" });
-</script>

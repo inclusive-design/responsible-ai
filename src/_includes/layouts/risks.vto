@@ -1,0 +1,23 @@
+{{ layout "layouts/base.vto" { pageType: 'risks' } }}
+<div class="benefit-container">
+    <filter-container class="wrapper" oninit filter-mode="all" filter-mode-stages="any" filter-mode-processes="any" data-paginate-results="10">
+        <!--{% include "partials/components/risk-filters.njk" %}-->
+        <div>
+            <div class="benefits-head">
+                <!--<h3 id="filtered-results" aria-live="polite" data-filter-results="{% __ 'filtered-risks' %}">{% __ 'risks' %}</h3>-->
+            </div>
+            <div class="filter-tags">
+                <!--<h4 id="filter-applied">{% __ 'applied-filters' %}</h4>-->
+                <div id="filter-tags">
+                </div>
+            </div>
+            <div class="benefits flow">
+                <!--{% for item in collections['risks_' + lang] %}-->
+                    <!--{% include "partials/components/item-card.njk" %}-->
+                <!--{% endfor %}-->
+            </div>
+        </div>
+        {{# include 'partials/components/pagination.vto' #}}
+    </filter-container>
+</div>
+{{ /layout }}
