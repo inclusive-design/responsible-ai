@@ -161,8 +161,8 @@ collections:
             name: title
             widget: string
             i18n: true
-          - label: Benefit
-            name: benefit
+          - label: Example
+            name: example
             widget: markdown
             i18n: true
           - label: Caution
