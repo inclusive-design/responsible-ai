@@ -122,7 +122,7 @@ collections:
       #   required: false
   - label: Benefits
     label_singular: Benefit
-    name: benefit
+    name: benefits
     i18n:
       structure: multiple_folders
     folder: src/collections/benefits/
@@ -202,29 +202,52 @@ collections:
         required: true
         i18n: true
       - label: Illustrative Examples
-        label_singular: Example
         name: examples
         widget: object
         required: false
         i18n: true
         fields:
           - label: Education
+            label_singular: Education Example
             name: education
-            widget: markdown
+            widget: list
             i18n: true
             required: false
+            field:
+              label: Education Example
+              name: example
+              widget: markdown
+              i18n: true
           - label: Employment
+            label_singular: Employment Example
             name: employment
-            widget: markdown
+            widget: list
             i18n: true
             required: false
+            field:
+              label: Employment Example
+              name: example
+              widget: markdown
+              i18n: true
           - label: Healthcare
+            label_singular: Healthcare Example
             name: healthcare
-            widget: markdown
+            widget: list
             i18n: true
             required: false
+            field:
+              label: Healthcare Example
+              name: example
+              widget: markdown
+              i18n: true
           - label: Services
+            label_singular: Services Example
             name: services
-            widget: markdown
+            widget: list
             i18n: true
             required: false
+            field:
+              label: Services Example
+              name: example
+              widget: markdown
+              i18n: true
