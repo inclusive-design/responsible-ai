@@ -1,6 +1,6 @@
 import assert from 'node:assert';
 import test from 'node:test';
-import objectArrayPush from '../src/assets/scripts/object-array-push.js';
+import objectArrayPush from '../src/_filters/object-array-push.js';
 
 const objectArray = {
 	projects: [],
