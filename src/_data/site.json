@@ -1,12 +1,12 @@
 {
-    "en": {
-        "title": "Responsible Adoption of AI for Disability-Inclusive Development",
-        "description": "",
-        "author": "Inclusive Design Research Centre"
-    },
-    "fr": {
-        "title": "Adoption responsable de l'IA pour un développement inclusif des personnes handicapées",
-        "description": "",
-        "author": "Inclusive Design Research Centre"
-    }
+	"en": {
+		"title": "Responsible Adoption of Disability-Inclusive AI",
+		"description": "TODO",
+		"author": "Inclusive Design Research Centre"
+	},
+	"fr": {
+		"title": "Adoption responsable d'une IA inclusive pour les personnes handicapées",
+		"description": "TODO",
+		"author": "Inclusive Design Research Centre"
+	}
 }

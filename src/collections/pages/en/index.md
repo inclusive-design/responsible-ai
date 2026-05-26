@@ -1,9 +1,9 @@
 ---
-translationKey: guidelines
-title: Responsible Adoption of AI for Disability-Inclusive Development
-shortTitle: Guidelines
+translationKey: index
+title: Responsible Adoption of Disability-Inclusive AI
+shortTitle: Responsible AI
 draft: false
-order: 0
+order: 1
 layout: layouts/home
 excerpt: ''
 previewImageAlt: ''
@@ -19,7 +19,7 @@ Talks about the starburst here
 
 ## The Three Dimensions of Inclusive Design
 
-Talks about the three dimensions of Inclusive design  
+Talks about the three dimensions of Inclusive design
 
 ## Framing for the World Bank Context
 
@@ -29,14 +29,20 @@ Talks how we can apply the framework for the World Bank Context
 
 You can use the guidelines in the following two ways:
 
-### Browse by Risks
+### Browse Risks
 
-#### [Browse risks](/guidelines/risks/)
+[Browse risks](/risks/)
 
-Visit the benefits library to see a list of benefits faced by Standards Development Organizations, organized by the 5 core stages covering 18 processes or topic areas. From there, you can select a specific benefit and explore the actions that can help resolve it.
+Visit the risks library to see a list of potential risks.
 
-### Browse by Sectors
+### Browse Benefits
 
-#### [Browse sectors](/guidelines/sectors/)
+[Browse benefits](/benefits/)
 
-Visit the actions library to see a list of actions to make Standards Development Processes more inclusive, organized by the 5 core stages covering 18 processes or topic areas.
+Visit the benefits library to see a list of potential benefits.
+
+### Browse Illustrative Examples
+
+[Browse examples](/examples/)
+
+Visit the examples library to see a list of illustrative examples of risks, organized by sector.

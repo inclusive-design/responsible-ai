@@ -1,0 +1,14 @@
+<nav class="pagination" aria-labelledby="pagination">
+	<h2 id="pagination" class="visually-hidden">{{ __ 'page-navigation', {title}, {lang, translations} }}</h2>
+    <ul class="container">
+    {{ if pagination.href.previous }}
+        <li><a class="pagination-link" href="{{ pagination.href.previous }}"><i class="icon fa-solid fa-arrow-left"></i><span class="visually-hidden">{{ __ 'previous', {}, {lang, translations} }}</span></a></li>
+    {{ /if }}
+    {{ for index, pageEntry of pagination.pages }}
+        <li><a class="pagination-link" href="{{ pagination.hrefs[ index ] }}"{{ if page.url === pagination.hrefs[ index ] }} aria-current="page"{{ /if }}>{{ index }}</a></li>
+    {{ /for }}
+    {{ if pagination.href.next }}
+        <li><a class="pagination-link" href="{{ pagination.href.next }}"><span class="visually-hidden">{{ __ 'next', {}, {lang, translations} }}</span><i class="icon fa-solid fa-arrow-right"></i></a></li>
+    {{ /if }}
+    </ul>
+</nav>

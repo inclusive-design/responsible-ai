@@ -5,5 +5,6 @@ export default {
 		'custom-property-pattern': undefined,
 		'no-descending-specificity': undefined,
 		'selector-class-pattern': undefined,
+		'order/properties-alphabetical-order': undefined,
 	},
 };

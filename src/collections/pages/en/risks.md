@@ -3,17 +3,11 @@ translationKey: risks
 title: Browse by Risks
 shortTitle: Browse Risks
 draft: false
-layout: layouts/risks
+lang: en
+order: 3
+parent: index
+layout: layouts/base
 excerpt: ''
-previewImage: ''
-previewImageAlt: ''
-bannerTitle: ''
-bannerText: |-
-  
-
-bannerImage: ''
-bannerImageAlt: ''
-outro: ''
 ---
 
 Not applicable.

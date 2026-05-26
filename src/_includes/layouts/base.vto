@@ -1,0 +1,51 @@
+	<!DOCTYPE html>
+	<html lang="{{ lang || defaultLanguage }}-CA" dir="ltr">
+	<head>
+	{{ include 'partials/global/meta.vto' }}
+	<title>{{ title }}</title>
+	{{ include 'partials/global/scripts.vto' }}
+	{{ include 'partials/global/stylesheets.vto' }}
+	{{ getBundle "fontawesome" }}
+	</head>
+	<body>
+	{{ include 'partials/global/header.vto' }}
+	<main id="main" class="region {{ pageType || 'page' }}">
+	<!--{% block banner %}-->
+	<div class="banner flow region wrapper">
+		{{ if pageType !== 'home' }}
+		{{ set breadcrumbLinks = collections.all |> eleventyNavigationBreadcrumb(translationKey) }}
+		{{ include 'partials/components/breadcrumbs.vto' {breadcrumbLinks} }}
+		{{ /if }}
+		<h1>{{ title }}</h1>
+		{{ if bannerText }}
+		{{ bannerText |> markdown |> safe }}
+		{{ /if }}
+		{{ if pageType === 'home' }}
+		<div class="cluster">
+		{{ set risksPage = collections['pages_' + lang].find(item => item.data.translationKey === 'risks') }}
+		{{ set risksLink = risksPage.url }}
+		{{ set risksLabel = 'browse-risks' }}
+		{{ include "partials/components/link-button.vto" { link: risksLink, label: risksLabel } }}
+
+		{{ set benefitsPage = collections['pages_' + lang].find(item => item.data.translationKey === 'benefits') }}
+		{{ set benefitsLink = benefitsPage.url }}
+		{{ set benefitsLabel = 'browse-benefits' }}
+
+		{{ include "partials/components/link-button.vto" { link: benefitsLink, label: benefitsLabel } }}
+
+		{{ set examplesPage = collections['pages_' + lang].find(item => item.data.translationKey === 'benefits') }}
+		{{ set examplesLink = examplesPage.url }}
+		{{ set examplesLabel = 'browse-examples' }}
+
+		{{ include "partials/components/link-button.vto" { link: examplesLink, label: examplesLabel } }}
+		</div>
+		{{ /if }}
+	</div>
+	<div class="content wrapper region">
+	{{ content |> safe }}
+	</div>
+	</main>
+	{{ include 'partials/global/footer.vto' }}
+	{{# uioCustomInit lang, supportedLanguages[lang].dir #}}
+	</body>
+	</html>

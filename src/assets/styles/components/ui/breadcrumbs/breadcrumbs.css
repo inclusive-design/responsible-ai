@@ -1,0 +1,10 @@
+.breadcrumbs li {
+	display: inline;
+	margin-inline-start: 0;
+}
+
+.breadcrumbs li:not(:last-of-type)::after {
+	content: "/";
+	display: inline;
+	padding-inline: var(--space-xs);
+}
