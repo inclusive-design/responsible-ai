@@ -1,6 +1,6 @@
 ---
 translationKey: risks
-title: Browse by Risks
+title: Browse Risks
 shortTitle: Browse Risks
 draft: false
 lang: en
