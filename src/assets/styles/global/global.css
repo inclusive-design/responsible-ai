@@ -172,9 +172,18 @@ a {
     text-underline-offset: 0.25em;
 }
 
+a.no-underline {
+	text-decoration: var(--link-decoration-none, none);
+}
+
+
 a code {
     background-color: inherit;
     color: inherit;
+}
+
+.underline {
+	text-decoration: underline;
 }
 
 /* ============================================
@@ -543,7 +552,6 @@ svg:not([class]) {
 svg[role="img"] {
     width: revert;
     height: revert;
-    padding: var(--space-xs, 0.75rem);
 }
 
 /* ============================================

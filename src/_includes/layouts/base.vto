@@ -1,11 +1,11 @@
 	<!DOCTYPE html>
 	<html lang="{{ lang || defaultLanguage }}-CA" dir="ltr">
 	<head>
-	{{ include 'partials/global/meta.vto' }}
-	<title>{{ title }}</title>
-	{{ include 'partials/global/scripts.vto' }}
-	{{ include 'partials/global/stylesheets.vto' }}
-	{{ getBundle "fontawesome" }}
+		{{ include 'partials/global/meta.vto' }}
+		<title>{{ title }}</title>
+		{{ include 'partials/global/scripts.vto' }}
+		{{ include 'partials/global/stylesheets.vto' }}
+		{{ getBundle "fontawesome" }}
 	</head>
 	<body class="{{ pageType || 'page' }}">
 	{{ include 'partials/global/header.vto' }}
@@ -33,7 +33,7 @@
 
 		{{ include "partials/components/link-button.vto" { link: benefitsLink, label: benefitsLabel } }}
 
-		{{ set examplesPage = collections['pages_' + lang].find(item => item.data.translationKey === 'benefits') }}
+		{{ set examplesPage = collections['pages_' + lang].find(item => item.data.translationKey === 'examples') }}
 		{{ set examplesLink = examplesPage.url }}
 		{{ set examplesLabel = 'browse-examples' }}
 

@@ -20,6 +20,7 @@ inclusive-disclosure [aria-expanded="true"]+* {
 
 inclusive-disclosure li {
 	margin-inline-start: 0;
+	text-wrap: balance;
 }
 
 @media (width >= 44.5rem) {

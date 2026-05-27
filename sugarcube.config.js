@@ -1,13 +1,13 @@
-import { defineConfig } from '@sugarcube-sh/vite';
+import { defineConfig } from '@sugarcube-sh/cli';
 
 export default defineConfig({
-	utilities: {
-		classes: {
-			'margin-inline': {
-				source: 'space.*',
-				prefix: 'margin-x',
-			},
-		},
+	resolver: 'src/design-tokens/tokens.resolver.json',
+	variables: {
+		path: '_site/assets/styles/variables.gen.css',
 	},
-	resolver: 'src/assets/styles/design-tokens/tokens.resolver.json',
+	utilities: {
+		path: '_site/assets/styles/utilities.gen.css',
+	},
+	components: 'src/assets/styles/components/ui',
+	cube: 'src/assets/styles',
 });

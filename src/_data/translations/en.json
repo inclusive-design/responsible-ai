@@ -4,7 +4,7 @@
 	"browse-risks": "Browse Risks",
 	"browse-examples": "Browse Examples",
 	"cc-by": "Creative Commons Attribution 4.0 License",
-	"contact-us": "Contact Us",
+	"contact-us": "Contact us",
 	"contact-us-address": "Address",
 	"contact-us-email": "Email",
 	"contact-us-phone": "Phone",
@@ -31,5 +31,6 @@
 	"education": "Education",
 	"healthcare": "Healthcare",
 	"employment": "Employment",
-	"services": "Services"
+	"services": "Services",
+	"sponsored-by": "Sponsored by"
 }

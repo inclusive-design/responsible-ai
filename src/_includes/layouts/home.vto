@@ -1,8 +1,6 @@
 {{ layout "layouts/base.vto" { pageType: 'home' } }}
 
-{{ include 'partials/components/sidebar-nav.vto' }}
-
-<article class="article flow region">
+<article class="article flow region prose">
 	{{ content |> safe }}
 </article>
 
