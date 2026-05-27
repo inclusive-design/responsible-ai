@@ -9,6 +9,7 @@ import _ from 'lodash';
 import parseTransform from './src/_transforms/parse-transform.js';
 import findTranslationKeyFilter from './src/_filters/find-translation-key-filter.js';
 import markdownFilter from './src/_filters/markdown-filter.js';
+import linkFragmentFilter from './src/_filters/link-fragment-filter.js';
 
 /**
  * @param {import("@11ty/eleventy").UserConfig} eleventyConfig An instance of Eleventy's UserConfig class.
@@ -63,6 +64,7 @@ export default function eleventy(eleventyConfig) {
 
 	eleventyConfig.addFilter('findTranslationKey', findTranslationKeyFilter);
 	eleventyConfig.addFilter('markdown', markdownFilter);
+	eleventyConfig.addFilter('linkFragment', linkFragmentFilter);
 
 	eleventyConfig.addShortcode('__', (key, values = {}, data) => __(key, values, data));
 

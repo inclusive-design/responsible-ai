@@ -1,12 +1,12 @@
 ---
-translationKey: benefits
-title: Benefits
+translationKey: employment
+title: Employment
 shortTitle: ''
 draft: false
 lang: en
 order: 2
-parent: index
-layout: layouts/benefits
+parent: examples
+layout: layouts/sector-examples
 excerpt: ''
 ---
 

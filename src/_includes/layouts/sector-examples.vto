@@ -1,0 +1,16 @@
+{{ layout "layouts/base.vto" { pageType: 'examples' } }}
+
+<article class="article flow region">
+{{ set examples = collections['risks_'+lang]
+	.reduce(
+		(accumulator, currentItem) =>
+		accumulator.concat(currentItem.data.examples[translationKey].map(example => ({sector: 'education', url: currentItem.url, index: currentItem.data.index, title: currentItem.data.title, content: example}))), [])
+}}
+
+{{ for example of examples }}
+	{{ include 'partials/components/example-card.vto' { example } }}
+{{ /for }}
+
+</article>
+
+{{ /layout }}
