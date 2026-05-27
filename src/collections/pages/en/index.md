@@ -6,8 +6,8 @@ draft: false
 order: 1
 layout: layouts/home
 excerpt: ''
-previewImageAlt: ''
 outro: ''
+previewImageAlt: ''
 bannerTitle: ''
 bannerText: ''
 bannerImageAlt: ''
@@ -21,19 +21,19 @@ However, AI is also a powerful tool for bridging barriers for persons with disab
 
 To optimize the benefits and mitigate the risks requires involving persons with disabilities throughout the AI lifecycle in all roles and functions. Disability is the ultimate challenge for AI and results in the greatest innovation.
 
-### Browse Risks
+## Browse Risks
 
 [Browse risks](/risks/)
 
 Visit the risks library to see a list of potential risks.
 
-### Browse Benefits
+## Browse Benefits
 
 [Browse benefits](/benefits/)
 
 Visit the benefits library to see a list of potential benefits.
 
-### Browse Illustrative Examples
+## Browse Illustrative Examples
 
 [Browse examples](/examples/)
 
