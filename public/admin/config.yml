@@ -156,8 +156,8 @@ collections:
         name: benefit
         widget: markdown
         i18n: true
-      - label: Caution
-        name: caution
+      - label: Limitation
+        name: limitation
         widget: markdown
         i18n: true
       - label: Illustrative Examples
