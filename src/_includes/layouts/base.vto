@@ -7,9 +7,9 @@
 	{{ include 'partials/global/stylesheets.vto' }}
 	{{ getBundle "fontawesome" }}
 	</head>
-	<body>
+	<body class="{{ pageType || 'page' }}">
 	{{ include 'partials/global/header.vto' }}
-	<main id="main" class="region {{ pageType || 'page' }}">
+	<main id="main" class="region" tabindex="-1">
 	<!--{% block banner %}-->
 	<div class="banner flow region wrapper">
 		{{ if pageType !== 'home' }}

@@ -1,0 +1,27 @@
+.skip-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.skip {
+	border: 0;
+    clip-path: rect(0 0 0 0);
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.skip:focus {
+   clip-path: unset;
+   height: auto;
+   overflow: visible;
+   top: var(--space-xs);
+   width: auto;
+   white-space: unset;
+}
