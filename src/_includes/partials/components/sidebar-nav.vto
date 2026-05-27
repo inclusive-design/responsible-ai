@@ -1,0 +1,14 @@
+<nav aria-labelledby="toc-title" class="flow sidebar sidebar-menu region">
+    <h2 id="toc-title">{{ __ 'toc', {}, {lang, translations} }}</h2>
+    <inclusive-disclosure class="flow">
+        <button class="button" aria-controls="{{ title |> slugify }}-menu">
+            <h2 id="toc-title-mobile">{{ __ 'toc', {}, {lang, translations} }} <i class="icon fa-solid fa-chevron-down"></i></h2>
+
+        </button>
+        <div content id="{{ title |> slugify }}-menu">
+            <div id="toc">
+                <ul role="list" class="flow"></ul>
+            </div>
+        </div>
+    </inclusive-disclosure>
+</nav>

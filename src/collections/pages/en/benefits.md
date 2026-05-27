@@ -6,7 +6,7 @@ draft: false
 lang: en
 order: 2
 parent: index
-layout: layouts/base
+layout: layouts/benefits
 excerpt: ''
 ---
 

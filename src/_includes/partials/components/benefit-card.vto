@@ -1,0 +1,8 @@
+<div class="card">
+	<div class="card-header">
+    	<h2><a href="{{ item.url }}">{{ item.data.index }}: {{ item.data.title }}</a></h2>
+	</div>
+    <div class="card-content">
+		{{ item.data.excerpt |> markdown |> safe }}
+    </div>
+</div>

@@ -52,15 +52,24 @@ export default function eleventy(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('src/assets/scripts/main.js');
 
 	for (const lang of ['en', 'fr']) {
-		eleventyConfig.addCollection(`sectors_${lang}`, (collection) => collection.getFilteredByGlob(`src/collections/sectors/${lang}/*.md`).toSorted((a, b) => a.data.title - b.data.title));
+		eleventyConfig.addCollection(
+			`benefits_${lang}`,
+			(collection) => collection
+				.getFilteredByGlob(`src/collections/benefits/${lang}/*.md`)
+				.toSorted((a, b) => a.data.index.localeCompare(b.data.index)),
+		);
 
 		eleventyConfig.addCollection(
 			`risks_${lang}`,
 			(collection) => collection
 				.getFilteredByGlob(`src/collections/risks/${lang}/*.md`)
-				.toSorted((a, b) => a.data.title.localeCompare(b.data.title)),
+				.toSorted((a, b) => a.data.index.localeCompare(b.data.index)),
 		);
-		eleventyConfig.addCollection(`pages_${lang}`, (collection) => collection.getFilteredByGlob(`src/collections/pages/${lang}/*.md`));
+		eleventyConfig.addCollection(
+			`pages_${lang}`,
+			(collection) => collection
+				.getFilteredByGlob(`src/collections/pages/${lang}/*.md`),
+		);
 	}
 
 	eleventyConfig.addFilter('objectArrayPush', objectArrayPush);

@@ -1,0 +1,37 @@
+.sidebar-menu>h2 {
+	display: none;
+}
+
+inclusive-disclosure {
+	display: block;
+}
+
+inclusive-disclosure [aria-expanded="true"] .icon {
+	transform: rotate(180deg);
+}
+
+inclusive-disclosure [aria-expanded]+* {
+	display: none;
+}
+
+inclusive-disclosure [aria-expanded="true"]+* {
+	display: block;
+}
+
+inclusive-disclosure li {
+	margin-inline-start: 0;
+}
+
+@media (width >= 44.5rem) {
+	.sidebar-menu>h2 {
+		display: block;
+	}
+
+	.sidebar-menu inclusive-disclosure [aria-expanded] {
+		display: none;
+	}
+
+	.sidebar-menu inclusive-disclosure [aria-expanded]+* {
+		display: block;
+	}
+}
