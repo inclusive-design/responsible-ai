@@ -16,15 +16,20 @@
 	"references": "References",
 	"risk": "Risk",
 	"benefit": "Benefit",
-	"examples": "Examples",
+	"examples": "Illustrative Examples",
 	"caution": "Caution",
+	"mitigation": "Mitigation",
 	"risks": "Risks",
-	"risk-slug": "risks",
+	"risks-slug": "risks",
 	"benefits-slug": "benefits",
 	"limitation": "Limitation",
 	"sectors": "Sectors",
 	"skip-to-content": "Skip to content",
 	"toc": "Table of Contents",
 	"page-navigation": "{{ title }} page navigation",
-	"breadcrumbs": "breadcrumb"
+	"breadcrumbs": "breadcrumb",
+	"education": "Education",
+	"healthcare": "Healthcare",
+	"employment": "Employment",
+	"services": "Services"
 }
