@@ -9,7 +9,7 @@
     {{ /for }}
     <li>
       <a href="{{ url }}" aria-current="page">
-        {{ title }}
+        {{ shortTitle ? shortTitle : title }}
       </a>
     </li>
   </ol>

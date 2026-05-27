@@ -1,7 +1,7 @@
 ---
 translationKey: benefits
-title: Browse by Benefits
-shortTitle: Browse Benefits
+title: Browse Benefits
+shortTitle: Benefits
 draft: false
 lang: en
 order: 2

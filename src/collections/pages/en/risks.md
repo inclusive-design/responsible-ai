@@ -1,12 +1,12 @@
 ---
 translationKey: risks
 title: Browse Risks
-shortTitle: Browse Risks
+shortTitle: Risks
 draft: false
 lang: en
 order: 3
 parent: index
-layout: layouts/base
+layout: layouts/risks
 excerpt: ''
 ---
 
