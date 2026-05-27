@@ -9,7 +9,7 @@
 {{ for example of examples }}
 <h3>{{ example.title }}</h3>
 {{ example.example |> markdown |> safe }}
-<h3>{{ __ 'caution', {}, {lang, translations} }}</h3>
+<h4>{{ __ 'caution', {}, {lang, translations} }}</h4>
 {{ example.caution |> markdown |> safe }}
 {{ /for }}
 </article>

@@ -20,21 +20,3 @@ The only common data characteristic of persons with disabilities is sufficient d
 However, AI is also a powerful tool for bridging barriers for persons with disabilities by translating information, performing average tasks and providing access to average content. Unfortunately this results in greater vulnerability to a number of risks.
 
 To optimize the benefits and mitigate the risks requires involving persons with disabilities throughout the AI lifecycle in all roles and functions. Disability is the ultimate challenge for AI and results in the greatest innovation.
-
-## Browse Risks
-
-[Browse risks](/risks/)
-
-Visit the risks library to see a list of potential risks.
-
-## Browse Benefits
-
-[Browse benefits](/benefits/)
-
-Visit the benefits library to see a list of potential benefits.
-
-## Browse Illustrative Examples
-
-[Browse examples](/examples/)
-
-Visit the examples library to see a list of illustrative examples of risks, organized by sector.

@@ -6,10 +6,7 @@ import fontAwesomePlugin from '@11ty/font-awesome';
 import fluidPlugin, { __ } from 'eleventy-plugin-fluid';
 import inclusiveFootnotesPlugin from '@inclusive-design/eleventy-plugin-inclusive-footnotes';
 import _ from 'lodash';
-import EleventyVitePlugin from '@11ty/eleventy-plugin-vite';
-import sugarcube from '@sugarcube-sh/vite';
 import parseTransform from './src/_transforms/parse-transform.js';
-import objectArrayPush from './src/_filters/object-array-push.js';
 import findTranslationKeyFilter from './src/_filters/find-translation-key-filter.js';
 import markdownFilter from './src/_filters/markdown-filter.js';
 
@@ -25,6 +22,7 @@ export default function eleventy(eleventyConfig) {
 	eleventyConfig.addPlugin(RenderPlugin);
 	eleventyConfig.addPlugin(inclusiveFootnotesPlugin);
 	eleventyConfig.addPlugin(fluidPlugin, {
+		uio: false,
 		css: { enabled: false },
 		js: { enabled: false },
 		defaultLanguage: 'en',
@@ -41,15 +39,6 @@ export default function eleventy(eleventyConfig) {
 			},
 		},
 	});
-
-	eleventyConfig.addPlugin(EleventyVitePlugin, {
-		viteOptions: {
-			plugins: [sugarcube()],
-		},
-	});
-	eleventyConfig.addPassthroughCopy({ 'src/assets/styles': 'assets/styles' });
-	eleventyConfig.addPassthroughCopy('src/assets/scripts/app.js');
-	eleventyConfig.addPassthroughCopy('src/assets/scripts/main.js');
 
 	for (const lang of ['en', 'fr']) {
 		eleventyConfig.addCollection(
@@ -72,40 +61,18 @@ export default function eleventy(eleventyConfig) {
 		);
 	}
 
-	eleventyConfig.addFilter('objectArrayPush', objectArrayPush);
 	eleventyConfig.addFilter('findTranslationKey', findTranslationKeyFilter);
 	eleventyConfig.addFilter('markdown', markdownFilter);
-
-	/*
-	  Provide a custom duplicate of eleventy-plugin-fluid's uioInit shortcode in
-    order to run it without the text-size preference.
-  */
-	eleventyConfig.addShortcode('uioCustomInit', (locale, direction) => {
-		const options = {
-			preferences: ['fluid.prefs.lineSpace', 'fluid.prefs.textFont', 'fluid.prefs.contrast', 'fluid.prefs.enhanceInputs'],
-			auxiliarySchema: {
-				terms: {
-					templatePrefix: '/lib/infusion/src/framework/preferences/html',
-					messagePrefix: '/lib/infusion/src/framework/preferences/messages',
-				},
-			},
-			prefsEditorLoader: {
-				lazyLoad: true,
-			},
-			locale,
-			direction,
-		};
-
-		return `<script>fluid.uiOptions.multilingual(".flc-prefsEditor-separatedPanel", ${JSON.stringify(options)});</script>`;
-	});
 
 	eleventyConfig.addShortcode('__', (key, values = {}, data) => __(key, values, data));
 
 	eleventyConfig.addTransform('parse', parseTransform);
 
-	eleventyConfig.addPassthroughCopy({ 'public/admin/': '/admin/' });
-	eleventyConfig.addPassthroughCopy({ 'public/assets/': '/assets/' });
-	eleventyConfig.addPassthroughCopy({ 'public/icons': '/' });
+	eleventyConfig.addPassthroughCopy({ 'src/admin/config.yml': 'admin/config.yml' });
+	eleventyConfig.addPassthroughCopy({ 'src/assets/scripts': 'assets/scripts' });
+	eleventyConfig.addPassthroughCopy({ 'src/assets/styles': 'assets/styles' });
+	eleventyConfig.addPassthroughCopy({ 'src/assets/uploads': 'assets/uploads' });
+	eleventyConfig.addPassthroughCopy({ 'src/assets/icons': '/' });
 
 	eleventyConfig.addPlugin(IdAttributePlugin);
 

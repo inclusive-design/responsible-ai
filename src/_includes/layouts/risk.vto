@@ -8,11 +8,17 @@
 <h2>{{ __ 'examples', {}, {lang, translations} }}</h2>
 {{ for sector, items of examples }}
 <h3>{{ __ sector, {}, {lang, translations} }}</h3>
+{{ if items.length > 1 }}
 <ul>
 {{ for item of items }}
-	<li>{{ item |> markdown |> safe }}</li>
+	<li>
+		{{ item |> markdown |> safe }}
+	</li>
 {{ /for }}
 </ul>
+{{ else }}
+	{{ items[0] |> markdown |> safe }}
+{{ /if }}
 {{ /for }}
 
 </article>

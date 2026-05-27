@@ -3,17 +3,17 @@
 
     position: relative;
     background-color: var(--color-surface-raised);
-    border: var(--panel-border-width) var(--panel-border-style) var(--panel-border-color);
+    border-inline-start: var(--panel-border-width) var(--panel-border-style) var(--panel-border-color);
     border-radius: var(--panel-radius);
-    box-shadow: var(--shadow-xs);
+    box-shadow: var(--shadow-lg);
 }
 
 .card-header {
     display: flex;
     flex-direction: column;
     gap: var(--space-2xs);
-    padding-block-start: var(--space-md);
-    padding-inline: var(--space-md);
+    padding-block-start: var(--space-lg);
+    padding-inline: var(--space-lg);
 }
 
 .card-media {
@@ -24,11 +24,34 @@
 }
 
 .card-content {
-    padding-block: var(--space-md);
-    padding-inline: var(--space-md);
+    padding-block: var(--space-lg);
+    padding-inline: var(--space-lg);
 }
 
 .card-footer {
-    padding-block-end: var(--space-md);
-    padding-inline: var(--space-md);
+    padding-block-end: var(--space-lg);
+    padding-inline: var(--space-lg);
+}
+
+.card a {
+	text-decoration: none;
+}
+
+.card a::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.card a:focus {
+	outline: transparent 1px solid;
+}
+
+.card:focus-within {
+	outline: var(--focus-ring-color, currentColor) var(--focus-ring-style, auto) var(--focus-ring-width, 2px);
+    outline-offset: var(--focus-ring-offset, 4px);
 }

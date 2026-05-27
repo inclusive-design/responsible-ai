@@ -1,0 +1,16 @@
+{
+	"panel": {
+		"radius": {
+			"$value": "{radius.none}"
+		},
+		"border-style": {
+			"$value": "{border.style}"
+		},
+		"border-color": {
+			"$value": "{color.border.loud}"
+		},
+		"border-width": {
+			"$value": "{border.width.max}"
+		}
+	}
+}

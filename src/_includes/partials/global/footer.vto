@@ -1,8 +1,7 @@
 <footer class="region" role="contentinfo">
     <div class="wrapper flow">
-        <div class="content grid-auto">
-            <section class="contact-us">
-	                <div class="flow">
+        <div class="content cluster">
+            <section class="flow">
 
                     <h2>{{ __ 'contact-us', {}, {lang, translations} }}</h2>
                     <p>
@@ -25,27 +24,25 @@
                         {{ contact.address |> markdown |> safe }}
                         </address>
                     </p>
-                </div>
             </section>
 
-            <section class="sponsors-license">
-                <div class="flow">
-                    <ul class="flow" role="list">
-                        <li>
-                            <a href="https://idrc.ocadu.ca" rel="external">
-                                {{ include 'svg/IDRC.svg' }}
-                                <span class="visually-hidden" lang="en">Inclusive Design Research Centre</a>
-                            <a>
-                        </li>
-                        <li>
-                            <a href="https://ocadu.ca" rel="external">
-                                {{ include 'svg/OCADU.svg' }}
-                                <span class="visually-hidden" lang="en">OCAD University</a>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="license">{{ __ 'license-statement', {}, {lang, translations} }}<a href="https://creativecommons.org/licenses/by/4.0/deed.{{ lang }}" rel="license external"><i class="fa-brands fa-creative-commons"></i> <i class="fa-brands fa-creative-commons-by"></i>{{ __ 'cc-by', {}, {lang, translations} }}</a>.</p>
-                </div>
+            <section class="flow">
+                <h2>{{ __ 'sponsored-by', {}, {lang, translations} }}</h2>
+                <p>
+                    <a href="https://idrc.ocadu.ca" rel="external">
+                        {{ include 'svg/idrc.svg' }}
+                        <span class="visually-hidden" lang="en">Inclusive Design Research Centre</a>
+                    <a>
+                </p>
+                <p>
+                    <a href="https://ocadu.ca" rel="external">
+                        {{ include 'svg/ocadu.svg' }}
+                        <span class="visually-hidden" lang="en">OCAD University</a>
+                    </a>
+                </p>
+            </section>
+            <section class="flow">
+                <p>{{ __ 'license-statement', {}, {lang, translations} }}<a class="no-underline" href="https://creativecommons.org/licenses/by/4.0/deed.{{ lang }}" rel="license external"><i class="fa-brands fa-creative-commons icon"></i> <i class="fa-brands fa-creative-commons-by icon"></i> <span class="underline">{{ __ 'cc-by', {}, {lang, translations} }}</span></a>.</p>
             </section>
         </div>
     </div>
