@@ -25,3 +25,7 @@ Can be any acceptable flexbox alignment value.
 .cluster[data-cluster-wrap="nowrap"] {
     flex-wrap: nowrap;
 }
+
+.cluster-sm {
+	--cluster-gap: 0.5rem;
+}

@@ -8,6 +8,7 @@ order: 2
 parent: index
 layout: layouts/benefits
 excerpt: ''
+bannerText: ''
 ---
 
 This space intentionally left blank.

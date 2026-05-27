@@ -43,6 +43,12 @@ export default function eleventy(eleventyConfig) {
 
 	for (const lang of ['en', 'fr']) {
 		eleventyConfig.addCollection(
+			lang,
+			(collection) => collection
+				.getFilteredByGlob(`src/collections/*/${lang}/*.md`),
+		);
+
+		eleventyConfig.addCollection(
 			`benefits_${lang}`,
 			(collection) => collection
 				.getFilteredByGlob(`src/collections/benefits/${lang}/*.md`)

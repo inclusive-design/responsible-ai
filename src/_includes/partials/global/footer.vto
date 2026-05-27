@@ -1,49 +1,47 @@
-<footer class="region" role="contentinfo">
-    <div class="wrapper flow">
-        <div class="content cluster">
-            <section class="flow">
+<footer class="wrapper" role="contentinfo">
+    <div class="content cluster">
+        <section class="flow">
 
-                    <h2>{{ __ 'contact-us', {}, {lang, translations} }}</h2>
-                    <p>
-                        <strong>
-                            {{ __ 'contact-us-email', {}, {lang, translations} }}
-                        </strong><br />
-                        <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
-                    </p>
-                    <p>
-                        <strong>
-                            {{ __ 'contact-us-phone', {}, {lang, translations} }}
-                        </strong><br />
-                        {{ contact.phone }}
-                    </p>
-                    <p>
-                        <strong>
-                            {{ __ 'contact-us-address', {}, {lang, translations} }}
-                        </strong>
-                        <address>
-                        {{ contact.address |> markdown |> safe }}
-                        </address>
-                    </p>
-            </section>
-
-            <section class="flow">
-                <h2>{{ __ 'created-by', {}, {lang, translations} }}</h2>
+                <h2>{{ __ 'contact-us', {}, {lang, translations} }}</h2>
                 <p>
-                    <a href="https://idrc.ocadu.ca" rel="external">
-                        {{ include 'svg/idrc.svg' }}
-                        <span class="visually-hidden" lang="en">Inclusive Design Research Centre</a>
-                    <a>
+                    <strong>
+                        {{ __ 'contact-us-email', {}, {lang, translations} }}
+                    </strong><br />
+                    <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
                 </p>
                 <p>
-                    <a href="https://ocadu.ca" rel="external">
-                        {{ include 'svg/ocadu.svg' }}
-                        <span class="visually-hidden" lang="en">OCAD University</a>
-                    </a>
+                    <strong>
+                        {{ __ 'contact-us-phone', {}, {lang, translations} }}
+                    </strong><br />
+                    {{ contact.phone }}
                 </p>
-            </section>
-            <section class="flow">
-                <p>{{ __ 'license-statement', {}, {lang, translations} }}<a class="no-underline" href="https://creativecommons.org/licenses/by/4.0/deed.{{ lang }}" rel="license external"><i class="fa-brands fa-creative-commons icon"></i> <i class="fa-brands fa-creative-commons-by icon"></i> <span class="underline">{{ __ 'cc-by', {}, {lang, translations} }}</span></a>.</p>
-            </section>
-        </div>
+                <p>
+                    <strong>
+                        {{ __ 'contact-us-address', {}, {lang, translations} }}
+                    </strong>
+                    <address>
+                    {{ contact.address |> markdown |> safe }}
+                    </address>
+                </p>
+        </section>
+
+        <section class="flow">
+            <h2>{{ __ 'created-by', {}, {lang, translations} }}</h2>
+            <p>
+                <a href="https://idrc.ocadu.ca" rel="external">
+                    {{ include 'svg/idrc.svg' }}
+                    <span class="visually-hidden" lang="en">Inclusive Design Research Centre</a>
+                <a>
+            </p>
+            <p>
+                <a href="https://ocadu.ca" rel="external">
+                    {{ include 'svg/ocadu.svg' }}
+                    <span class="visually-hidden" lang="en">OCAD University</a>
+                </a>
+            </p>
+        </section>
+        <section class="flow">
+            <p>{{ __ 'license-statement', {}, {lang, translations} }}<a class="no-underline" href="https://creativecommons.org/licenses/by/4.0/deed.{{ lang }}" rel="license external"><i class="fa-brands fa-creative-commons icon"></i> <i class="fa-brands fa-creative-commons-by icon"></i> <span class="underline">{{ __ 'cc-by', {}, {lang, translations} }}</span></a>.</p>
+        </section>
     </div>
 </footer>
