@@ -6,10 +6,10 @@ draft: false
 order: 1
 layout: layouts/home
 excerpt: ''
-outro: ''
-previewImageAlt: ''
-bannerTitle: ''
 bannerText: ''
+previewImageAlt: ''
+outro: ''
+bannerTitle: ''
 bannerImageAlt: ''
 ---
 

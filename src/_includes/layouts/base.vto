@@ -7,45 +7,25 @@
 		{{ include 'partials/global/stylesheets.vto' }}
 		{{ getBundle "fontawesome" }}
 	</head>
-	<body class="{{ pageType || 'page' }}">
+	<body class="{{ pageType || 'page' }} flow">
 	{{ include 'partials/global/header.vto' }}
-	<main id="main" class="region" tabindex="-1">
-	<!--{% block banner %}-->
-	<div class="banner flow region wrapper">
+	<main id="main" class="region flow" tabindex="-1">
+	<div class="banner flow wrapper">
 		{{ if pageType !== 'home' }}
-		{{ set breadcrumbLinks = collections.all |> eleventyNavigationBreadcrumb(translationKey) }}
-		{{ include 'partials/components/breadcrumbs.vto' {breadcrumbLinks} }}
+		{{ include 'partials/components/breadcrumbs.vto' }}
 		{{ /if }}
 		<h1>{{ title }}</h1>
 		{{ if bannerText }}
 		{{ bannerText |> markdown |> safe }}
 		{{ /if }}
-		{{ if pageType === 'home' }}
-		<div class="cluster">
-		{{ set risksPage = collections['pages_' + lang].find(item => item.data.translationKey === 'risks') }}
-		{{ set risksLink = risksPage.url }}
-		{{ set risksLabel = 'browse-risks' }}
-		{{ include "partials/components/link-button.vto" { link: risksLink, label: risksLabel } }}
-
-		{{ set benefitsPage = collections['pages_' + lang].find(item => item.data.translationKey === 'benefits') }}
-		{{ set benefitsLink = benefitsPage.url }}
-		{{ set benefitsLabel = 'browse-benefits' }}
-
-		{{ include "partials/components/link-button.vto" { link: benefitsLink, label: benefitsLabel } }}
-
-		{{ set examplesPage = collections['pages_' + lang].find(item => item.data.translationKey === 'examples') }}
-		{{ set examplesLink = examplesPage.url }}
-		{{ set examplesLabel = 'browse-examples' }}
-
-		{{ include "partials/components/link-button.vto" { link: examplesLink, label: examplesLabel } }}
-		</div>
+		{{ if pageType === 'home' || pageType === 'examples' }}
+		{{ include 'partials/components/calls-to-action.vto' }}
 		{{ /if }}
 	</div>
-	<div class="content wrapper region">
+	<div class="content wrapper">
 	{{ content |> safe }}
 	</div>
 	</main>
 	{{ include 'partials/global/footer.vto' }}
-	{{# uioCustomInit lang, supportedLanguages[lang].dir #}}
 	</body>
 	</html>

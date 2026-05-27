@@ -104,11 +104,11 @@ collections:
       #   widget: text
       #   i18n: true
       #   required: false
-      # - label: Banner Text
-      #   name: bannerText
-      #   widget: text
-      #   i18n: true
-      #   required: false
+      - label: Banner Text
+        name: bannerText
+        widget: text
+        i18n: true
+        required: false
       # - label: Banner Image
       #   name: bannerImage
       #   widget: image

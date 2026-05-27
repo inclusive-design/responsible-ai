@@ -1,8 +1,8 @@
 {
 	"applied-filters": "Applied Filters",
-	"browse-benefits": "Browse Benefits",
-	"browse-risks": "Browse Risks",
-	"browse-examples": "Browse Examples",
+	"cta-benefits": "Browse Benefits",
+	"cta-risks": "Browse Risks",
+	"cta-examples": "Browse Examples",
 	"cc-by": "Creative Commons Attribution 4.0 License",
 	"contact-us": "Contact us",
 	"contact-us-address": "Address",
@@ -32,6 +32,11 @@
 	"healthcare": "Healthcare",
 	"employment": "Employment",
 	"services": "Services",
+	"cta-education": "Education",
+	"cta-healthcare": "Healthcare",
+	"cta-employment": "Employment",
+	"cta-services": "Services",
 	"created-by": "Created by",
-	"examples-slug": "examples"
+	"examples-slug": "examples",
+	"menu": "menu"
 }

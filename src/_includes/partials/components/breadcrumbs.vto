@@ -1,3 +1,4 @@
+{{ set breadcrumbLinks = collections[lang] |> eleventyNavigationBreadcrumb(translationKey) }}
 <nav aria-label="{{ __ 'breadcrumbs', {}, {lang, translations} }}" class="breadcrumb">
   <ol class="breadcrumbs" role="list">
     {{ for breadcrumbLink of breadcrumbLinks }}

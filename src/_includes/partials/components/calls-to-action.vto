@@ -1,0 +1,6 @@
+<div class="cluster">
+{{ set callsToAction = collections[lang] |> eleventyNavigation(translationKey) }}
+{{ for item of callsToAction }}
+{{ include "partials/components/link-button.vto" { link: item.url, label: `cta-${item.key}` } }}
+{{ /for }}
+</div>
