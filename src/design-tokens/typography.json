@@ -9,14 +9,7 @@
 		},
 		"sans": {
 			"$value": [
-				"Geist",
-				"Inter",
-				"-apple-system",
-				"BlinkMacSystemFont",
-				"Segoe UI",
-				"Roboto",
-				"Helvetica Neue",
-				"Arial",
+				"Atkinson Hyperlegible Next",
 				"sans-serif"
 			]
 		},
@@ -51,48 +44,45 @@
 				"$value": 600
 			},
 			"bold": {
-				"$value": 700
+				"$value": 600
 			}
 		}
 	},
 	"text": {
 		"xs": {
-			"$value": "{size.step.-2}"
-		},
-		"sm": {
 			"$value": "{size.step.-1}"
 		},
-		"base": {
+		"sm": {
 			"$value": "{size.step.0}"
 		},
-		"lg": {
+		"base": {
 			"$value": "{size.step.1}"
 		},
-		"xl": {
+		"lg": {
 			"$value": "{size.step.2}"
 		},
-		"2xl": {
+		"xl": {
 			"$value": "{size.step.3}"
 		},
-		"3xl": {
+		"2xl": {
 			"$value": "{size.step.4}"
 		},
-		"4xl": {
+		"3xl": {
 			"$value": "{size.step.5}"
 		},
-		"5xl": {
+		"4xl": {
 			"$value": "{size.step.6}"
 		},
-		"6xl": {
+		"5xl": {
 			"$value": "{size.step.7}"
 		},
-		"7xl": {
+		"6xl": {
 			"$value": "{size.step.8}"
 		},
-		"8xl": {
+		"7xl": {
 			"$value": "{size.step.9}"
 		},
-		"9xl": {
+		"8xl": {
 			"$value": "{size.step.10}"
 		}
 	},
