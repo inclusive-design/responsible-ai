@@ -24,3 +24,4 @@
 * change caution to limitation in Benefits ([#13](https://github.com/inclusive-design/responsible-ai/issues/13)) ([fb5451e](https://github.com/inclusive-design/responsible-ai/commit/fb5451ed1a3193c72abaf8cf6afa176a63e3d05f))
 * passthrough copy issues with Vite ([7288e79](https://github.com/inclusive-design/responsible-ai/commit/7288e79c0faec4eb45864608f43a2bd6e06680be))
 * passthrough copy issues with Vite ([f783b4c](https://github.com/inclusive-design/responsible-ai/commit/f783b4ce66fde685aaf2c0a0e3e6a3addd614503))
+* restore region class to footer ([e33e471](https://github.com/inclusive-design/responsible-ai/commit/e33e471adb541896e2ba3fcc6846a07646db139b))
