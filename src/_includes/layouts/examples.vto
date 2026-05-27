@@ -1,0 +1,17 @@
+{{ layout "layouts/base.vto" { pageType: 'examples' } }}
+
+<article class="article flow region">
+
+	{{ content |> safe }}
+
+	{{ set nav = collections['pages_' + lang] |> eleventyNavigation(translationKey) }}
+
+	<div class="cluster">
+	{{ for item of nav }}
+	{{ include "partials/components/link-button.vto" { link: item.url, label: item.data.translationKey } }}
+	{{ /for }}
+	</div>
+
+</article>
+
+{{ /layout }}

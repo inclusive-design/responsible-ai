@@ -32,5 +32,6 @@
 	"healthcare": "Healthcare",
 	"employment": "Employment",
 	"services": "Services",
-	"sponsored-by": "Sponsored by"
+	"created-by": "Created by",
+	"examples-slug": "examples"
 }

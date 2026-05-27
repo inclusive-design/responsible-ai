@@ -15,7 +15,7 @@ export default {
 			};
 		},
 		permalink(data) {
-			data.slug = data.page.fileSlug;
+			data.slug = data.parent && data.parent !== 'index' ? `${__(`${data.parent}-slug`, {}, data)}/${data.page.fileSlug}` : data.page.fileSlug;
 			return generatePermalink(data, 'pages');
 		},
 	},

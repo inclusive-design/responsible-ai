@@ -1,12 +1,12 @@
 ---
-translationKey: risks
-title: Risks
+translationKey: healthcare
+title: Healthcare
 shortTitle: ''
 draft: false
 lang: en
 order: 3
-parent: index
-layout: layouts/risks
+parent: examples
+layout: layouts/sector-examples
 excerpt: ''
 ---
 

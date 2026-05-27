@@ -1,13 +1,13 @@
 ---
 translationKey: examples
-title: Browse Illustrative Examples
-shortTitle: Illustrative Examples
+title: Illustrative Examples
+shortTitle: ''
 draft: false
 lang: en
 order: 4
 parent: index
-layout: layouts/base
+layout: layouts/examples
 excerpt: ''
 ---
 
-Not applicable.
+Browse illustrative examples of each risk by sector:
