@@ -4,7 +4,7 @@ const parseTransform = (value, outputPath) => {
 	if (outputPath && outputPath.includes('.html')) {
 		const { document } = parseHTML(value);
 
-		const pageNavHeadings = document.querySelectorAll('main:has(nav) article h2, main:has(nav) article h3');
+		const pageNavHeadings = document.querySelectorAll('main:has(nav) article h2');
 		const navContainer = document.querySelector('main nav.sidebar-menu #toc ul');
 		for (const heading of pageNavHeadings) {
 			const link = document.createElement('a');

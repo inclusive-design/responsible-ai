@@ -1,0 +1,23 @@
+{{ layout "layouts/base.vto" { pageType: 'benefit' } }}
+
+<article class="article flow prose">
+	<div class="flow">
+<h3>{{ __ 'benefit', {}, {lang, translations} }}</h3>
+{{ benefit |> markdown |> safe }}
+ </div>
+ <div class="flow">
+<h3>{{ __ 'caution', {}, {lang, translations} }}</h3>
+{{ caution |> markdown |> safe }}
+ </div>
+<div class="flow">
+<h3>{{ __ 'examples', {}, {lang, translations} }}</h3>
+{{ for example of examples }}
+<h4>{{ example.title }}</h4>
+{{ example.example |> markdown |> safe }}
+<h4>{{ __ 'caution', {}, {lang, translations} }}</h4>
+{{ example.caution |> markdown |> safe }}
+{{ /for }}
+</div>
+</article>
+
+{{ /layout }}
