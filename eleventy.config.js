@@ -52,14 +52,22 @@ export default function eleventy(eleventyConfig) {
 			`opportunities_${lang}`,
 			(collection) => collection
 				.getFilteredByGlob(`src/collections/opportunities/${lang}/*.md`)
-				.toSorted((a, b) => a.data.index.localeCompare(b.data.index)),
+				.toSorted((a, b) => {
+					const indexA = Number.parseInt(a.data.index.slice(1), 10);
+					const indexB = Number.parseInt(b.data.index.slice(1), 10);
+					return indexA - indexB;
+				}),
 		);
 
 		eleventyConfig.addCollection(
 			`risks_${lang}`,
 			(collection) => collection
 				.getFilteredByGlob(`src/collections/risks/${lang}/*.md`)
-				.toSorted((a, b) => a.data.index.localeCompare(b.data.index)),
+				.toSorted((a, b) => {
+					const indexA = Number.parseInt(a.data.index.slice(1), 10);
+					const indexB = Number.parseInt(b.data.index.slice(1), 10);
+					return indexA - indexB;
+				}),
 		);
 		eleventyConfig.addCollection(
 			`pages_${lang}`,
