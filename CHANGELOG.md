@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.5.3](https://github.com/inclusive-design/responsible-ai/compare/v2026.5.2...v2026.5.3) (2026-05-28)
+
+
+### Bug Fixes
+
+* decrease fieldset border width, thicker checkbox ([#33](https://github.com/inclusive-design/responsible-ai/issues/33)) ([299d9f1](https://github.com/inclusive-design/responsible-ai/commit/299d9f1f0a4a4734245df5820bcc117faa6900d9))
+
 ## [2026.5.2](https://github.com/inclusive-design/responsible-ai/compare/v2026.5.1...v2026.5.2) (2026-05-28)
 
 
