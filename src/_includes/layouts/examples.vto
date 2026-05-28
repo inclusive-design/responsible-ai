@@ -21,7 +21,7 @@
 	).toSorted((a, b) => a.sector.localeCompare(b.sector))
 }}
 
-<filter-container oninit filter-mode="all" data-paginate-results="10" data-page="1">
+<filter-container oninit filter-mode="any" data-paginate-results="10" data-page="1">
 {{ include 'partials/components/sidebar-filters.vto' }}
 
 <article class="article flow">

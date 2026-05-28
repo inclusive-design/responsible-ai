@@ -5,7 +5,7 @@
         <ul id="filter-sector" class="sectors" role="list">
             {{ for sector of ['education', 'employment', 'healthcare', 'services'] }}
                 <li>
-                    <input type="checkbox" id="{{ sector }}" name="sector" value="{{ sector }}" data-filter-key="sector"/> <label for="{{ sector }}">{{ __ sector, {}, {lang, translations} }}</label>
+                    <input class="checkbox" type="checkbox" id="{{ sector }}" name="sector" value="{{ sector }}" data-filter-key="sector"/> <label for="{{ sector }}">{{ __ sector, {}, {lang, translations} }}</label>
                 </li>
             {{ /for }}
         </ul>

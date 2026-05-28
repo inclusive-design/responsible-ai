@@ -42,6 +42,6 @@
 	"examples-plural": "examples",
 	"clear-filter": "clear filter",
 	"pagination-navigation": "pagination navigation",
-	"previous": "Previous",
-	"next": "Next"
+	"previous": "previous",
+	"next": "next"
 }
