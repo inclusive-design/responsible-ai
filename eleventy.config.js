@@ -4,7 +4,6 @@ import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
 import { VentoPlugin } from 'eleventy-plugin-vento';
 import fontAwesomePlugin from '@11ty/font-awesome';
 import fluidPlugin, { __ } from 'eleventy-plugin-fluid';
-import inclusiveFootnotesPlugin from '@inclusive-design/eleventy-plugin-inclusive-footnotes';
 import _ from 'lodash';
 import parseTransform from './src/_transforms/parse-transform.js';
 import findTranslationKeyFilter from './src/_filters/find-translation-key-filter.js';
@@ -21,7 +20,6 @@ export default function eleventy(eleventyConfig) {
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(VentoPlugin);
 	eleventyConfig.addPlugin(RenderPlugin);
-	eleventyConfig.addPlugin(inclusiveFootnotesPlugin);
 	eleventyConfig.addPlugin(fluidPlugin, {
 		uio: false,
 		css: { enabled: false },
