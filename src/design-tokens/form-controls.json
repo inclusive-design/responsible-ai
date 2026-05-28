@@ -13,7 +13,7 @@
 			"$value": "{border.style}"
 		},
 		"border-color": {
-			"$value": "{color.border.normal}"
+			"$value": "{color.border.loud}"
 		},
 		"radius": {
 			"$value": "{radius.none}"

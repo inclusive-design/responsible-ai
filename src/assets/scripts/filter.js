@@ -1,9 +1,8 @@
 /* eslint-disable import-x/no-unassigned-import */
-import '@zachleat/filter-container';
+import './filter-container.js';
 
 window.addEventListener('load', () => {
 	renderFilterTags();
-	sortResources();
 });
 
 const filters = document.querySelector('#filters');
@@ -22,66 +21,18 @@ const renderFilterTags = () => {
 		const filterApplied = document.querySelector('#filter-applied');
 		filterApplied.style.display = 'block';
 		for (const option of checkedFilterOptions) {
-			const checkbox = filters.querySelector(`label[for='${option.id}']`);
-			const filterTag = document.createElement('button');
-			filterTag.className = `filter-tag ${option.name}`;
-			filterTag.addEventListener('click', () => {
+			const checkbox = filters.querySelector(`[for='${option.id}']`);
+			const template = document.querySelector('#clear-button');
+			const clone = document.importNode(template.content, true);
+			clone.addEventListener('click', () => {
 				checkbox.click();
 			});
-			filterTag.innerHTML = checkbox.innerHTML;
-			filterTags.append(filterTag);
+			const label = clone.querySelector('.label');
+			label.innerHTML = checkbox.innerHTML;
+			filterTags.append(clone);
 		}
-
-		const clearFiltersButton = document.createElement('button');
-		clearFiltersButton.innerHTML = 'Clear filters';
-		clearFiltersButton.addEventListener('click', () => {
-			for (const checkbox of document.querySelectorAll('input[type="checkbox"]:checked')) {
-				checkbox.click();
-			}
-		});
-		filterTags.append(clearFiltersButton);
 	} else {
 		const filterApplied = document.querySelector('#filter-applied');
 		filterApplied.style.display = 'none';
-	}
-};
-
-const getSortOption = document.querySelector('#resourcesSortSelector');
-if (getSortOption) {
-	getSortOption.addEventListener('change', (event) => {
-		sortResources(event.target.value);
-		event.target.selected = true;
-	});
-}
-
-const sortResources = (sortBy) => {
-	const resourceContainer = document.querySelectorAll('.resources')[0];
-	if (resourceContainer) {
-		const resources = [...resourceContainer.children];
-		switch (sortBy) {
-			case 'ascTitle': {
-				resources.sort((a, b) => a.dataset.title.localeCompare(b.dataset.title));
-				break;
-			}
-
-			case 'ascDate': {
-				resources.sort((a, b) => new Date(a.dataset.date) - new Date(b.dataset.date));
-				break;
-			}
-
-			case 'decDate': {
-				resources.sort((a, b) => new Date(b.dataset.date) - new Date(a.dataset.date));
-				break;
-			}
-
-			default: {
-				resources.sort((a, b) => a.dataset.title.localeCompare(b.dataset.title));
-				break;
-			}
-		}
-
-		for (const resource of resources) {
-			resourceContainer.append(resource);
-		}
 	}
 };

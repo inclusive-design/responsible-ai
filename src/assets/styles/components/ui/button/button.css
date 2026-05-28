@@ -50,6 +50,10 @@
     border-color: var(--color-fill-loud);
 }
 
+.button[data-variant="rounded"] {
+	border-radius: var(--radius-full);
+}
+
 .button[data-size="lg"] {
     font-size: var(--text-lg);
 }
