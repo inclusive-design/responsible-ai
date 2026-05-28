@@ -1,5 +1,13 @@
 # Changelog
 
+## [2026.5.2](https://github.com/inclusive-design/responsible-ai/compare/v2026.5.1...v2026.5.2) (2026-05-28)
+
+
+### Bug Fixes
+
+* remove reference to outdated plugin ([6facec8](https://github.com/inclusive-design/responsible-ai/commit/6facec8ebb081d5fde35fd7b1bffd1f6e3e801fd))
+* resolve filter issue ([#32](https://github.com/inclusive-design/responsible-ai/issues/32)) ([883c616](https://github.com/inclusive-design/responsible-ai/commit/883c6168195cadb1483dd16faa41ce381353ff36))
+
 ## [2026.5.1](https://github.com/inclusive-design/responsible-ai/compare/v2026.5.0...v2026.5.1) (2026-05-28)
 
 
