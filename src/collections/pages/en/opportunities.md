@@ -1,12 +1,12 @@
 ---
-translationKey: benefits
-title: Benefits
+translationKey: opportunities
+title: Opportunities
 shortTitle: ''
 draft: false
 lang: en
 order: 2
 parent: index
-layout: layouts/benefits
+layout: layouts/opportunities
 excerpt: ''
 bannerText: ''
 ---

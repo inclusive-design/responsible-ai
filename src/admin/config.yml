@@ -130,12 +130,12 @@ collections:
       #   i18n: true
       #   buttons: [bold, italic, link, heading-two, heading-three]
       #   required: false
-  - label: Benefits
-    label_singular: Benefit
-    name: benefits
+  - label: Opportunities
+    label_singular: Opportunity
+    name: opportunities
     i18n:
       structure: multiple_folders
-    folder: src/collections/benefits/
+    folder: src/collections/opportunities/
     icon: check_circle
     slug: "{{index}}"
     summary: '{{index}}. {{title}}'
@@ -152,8 +152,8 @@ collections:
         name: excerpt
         widget: text
         i18n: true
-      - label: Benefit
-        name: benefit
+      - label: Opportunity
+        name: opportunity
         widget: markdown
         i18n: true
       - label: Limitation

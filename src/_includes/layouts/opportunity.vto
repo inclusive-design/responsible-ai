@@ -1,8 +1,8 @@
-{{ layout "layouts/base.vto" { pageType: 'benefit' } }}
+{{ layout "layouts/base.vto" { pageType: 'opportunity' } }}
 
 <article class="article flow prose">
-<h2>{{ __ 'benefit', {}, {lang, translations} }}</h2>
-{{ benefit |> markdown |> safe }}
+<h2>{{ __ 'opportunity', {}, {lang, translations} }}</h2>
+{{ opportunity |> markdown |> safe }}
 <h2>{{ __ 'limitation', {}, {lang, translations} }}</h2>
 {{ limitation |> markdown |> safe }}
 <h2>{{ __ 'examples', {}, {lang, translations} }}</h2>

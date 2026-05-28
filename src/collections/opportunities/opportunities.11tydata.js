@@ -1,19 +1,19 @@
 import { __, generatePermalink } from 'eleventy-plugin-fluid';
 
 export default {
-	layout: 'layouts/benefit',
+	layout: 'layouts/opportunity',
 	eleventyComputed: {
 		translationKey: (data) => data.index,
 		eleventyNavigation(data) {
 			return {
 				key: data.index,
 				title: data.title,
-				parent: 'benefits',
+				parent: 'opportunities',
 			};
 		},
 		permalink(data) {
 			data.slug = data.index.toLowerCase();
-			return generatePermalink(data, 'benefits', __('benefits-slug', {}, data));
+			return generatePermalink(data, 'opportunities', __('opportunities-slug', {}, data));
 		},
 	},
 };
