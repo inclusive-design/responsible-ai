@@ -1,9 +1,12 @@
 <div class="card" data-filter-sector="{{ example.sector }}">
+	<div class="card-header">
+		<h4><a href="{{ example.url }}{{ example.example |> linkFragment }}">{{ example.title || 'Untitled' }}</a></h4>
+	</div>
     <div class="card-content">
-	    <a href="{{ example.url }}{{ example.content |> linkFragment }}">{{ example.content |> markdown |> safe }}</a>
+	    {{ example.example |> markdown |> safe }}
     </div>
     <div class="card-footer">
-    	<span class="badge" data-size="lg">{{ example.index }}: {{ example.title }}</span>
+    	<span class="badge" data-size="lg">{{ example.risk }}</span>
     	<span class="badge" data-size="lg">{{ __ example.sector, {}, {lang, translations} }}</span>
     </div>
 </div>

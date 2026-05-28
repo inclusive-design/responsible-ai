@@ -223,41 +223,57 @@ collections:
             widget: list
             i18n: true
             required: false
-            field:
-              label: Education Example
-              name: example
-              widget: markdown
-              i18n: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
+                i18n: true
+              - label: Example
+                name: example
+                widget: markdown
+                i18n: true
           - label: Employment
             label_singular: Employment Example
             name: employment
             widget: list
             i18n: true
             required: false
-            field:
-              label: Employment Example
-              name: example
-              widget: markdown
-              i18n: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
+                i18n: true
+              - label: Example
+                name: example
+                widget: markdown
+                i18n: true
           - label: Healthcare
             label_singular: Healthcare Example
             name: healthcare
             widget: list
             i18n: true
             required: false
-            field:
-              label: Healthcare Example
-              name: example
-              widget: markdown
-              i18n: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
+                i18n: true
+              - label: Example
+                name: example
+                widget: markdown
+                i18n: true
           - label: Services
             label_singular: Services Example
             name: services
             widget: list
             i18n: true
             required: false
-            field:
-              label: Services Example
-              name: example
-              widget: markdown
-              i18n: true
+            fields:
+              - label: Title
+                name: title
+                widget: string
+                i18n: true
+              - label: Example
+                name: example
+                widget: markdown
+                i18n: true
