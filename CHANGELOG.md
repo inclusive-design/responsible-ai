@@ -1,5 +1,20 @@
 # Changelog
 
+## [2026.5.1](https://github.com/inclusive-design/responsible-ai/compare/v2026.5.0...v2026.5.1) (2026-05-28)
+
+
+### Features
+
+* add autolinks for Risk and Opportunity references (resolves [#25](https://github.com/inclusive-design/responsible-ai/issues/25)) ([#26](https://github.com/inclusive-design/responsible-ai/issues/26)) ([1a501ca](https://github.com/inclusive-design/responsible-ai/commit/1a501caf5c654adf9ff2f670445e23e444f0d788))
+* example titles ([#29](https://github.com/inclusive-design/responsible-ai/issues/29)) ([bd6235b](https://github.com/inclusive-design/responsible-ai/commit/bd6235b519a4e86c6d9409e79c66618ef24fca8a))
+* filterable examples ([#28](https://github.com/inclusive-design/responsible-ai/issues/28)) ([ef738a4](https://github.com/inclusive-design/responsible-ai/commit/ef738a4aceabd67a52229ab238ae66311f8bd932))
+* switch to Atkinson Hyperlegible Next ([#21](https://github.com/inclusive-design/responsible-ai/issues/21)) ([7cfd25e](https://github.com/inclusive-design/responsible-ai/commit/7cfd25eb4004a83b1cab66d29892f5d4934c8c34))
+
+
+### Bug Fixes
+
+* remove unused dependencies ([#30](https://github.com/inclusive-design/responsible-ai/issues/30)) ([a4db6d1](https://github.com/inclusive-design/responsible-ai/commit/a4db6d1a7bbc795d319aa005c9660cede625b81e))
+
 ## [2026.5.0](https://github.com/inclusive-design/responsible-ai/compare/v2026.5.0...v2026.5.0) (2026-05-28)
 
 
