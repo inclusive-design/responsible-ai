@@ -49,9 +49,9 @@ export default function eleventy(eleventyConfig) {
 		);
 
 		eleventyConfig.addCollection(
-			`benefits_${lang}`,
+			`opportunities_${lang}`,
 			(collection) => collection
-				.getFilteredByGlob(`src/collections/benefits/${lang}/*.md`)
+				.getFilteredByGlob(`src/collections/opportunities/${lang}/*.md`)
 				.toSorted((a, b) => a.data.index.localeCompare(b.data.index)),
 		);
 
