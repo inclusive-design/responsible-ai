@@ -15,10 +15,7 @@
 				}
 			},
 			"thick": {
-				"$value": {
-					"value": 2,
-					"unit": "px"
-				}
+				"$value": "{size.step.-3}"
 			},
 			"max": {
 				"$value": "{size.step.-2}"

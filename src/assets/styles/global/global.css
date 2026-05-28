@@ -231,7 +231,7 @@ form > * + * {
 
 fieldset {
     margin-inline: 0;
-    border: var(--panel-border-width, 1px) var(--border-style, solid)
+    border: var(--border-width-thick, 1px) var(--border-style, solid)
         var(--panel-border-color, currentColor);
     padding: var(--space-sm, 1rem);
 }
