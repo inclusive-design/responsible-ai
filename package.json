@@ -1,6 +1,6 @@
 {
 	"name": "@inclusive-design/responsible-ai",
-	"version": "2026.5.2",
+	"version": "2026.5.3",
 	"description": "",
 	"main": "eleventy.config.js",
 	"type": "module",
