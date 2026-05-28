@@ -12,12 +12,14 @@
 <ul>
 {{ for item of items }}
 	<li>
-		{{ item |> markdown |> safe }}
+		<h4>{{ item.title }}</h4>
+		{{ item.example |> markdown |> safe }}
 	</li>
 {{ /for }}
 </ul>
 {{ else }}
-	{{ items[0] |> markdown |> safe }}
+	<h4>{{ items[0].title }}</h4>
+	{{ items[0].example |> markdown |> safe }}
 {{ /if }}
 {{ /for }}
 
