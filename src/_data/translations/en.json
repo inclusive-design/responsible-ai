@@ -8,7 +8,6 @@
 	"contact-us-address": "Address",
 	"contact-us-email": "Email",
 	"contact-us-phone": "Phone",
-	"filtered-risks": "risk/risks",
 	"filters": "Filters",
 	"header-intro": "An <a href='https://idrc.ocadu.ca/' rel='external'>Inclusive Design Research Centre</a> Project",
 	"header-intro-short": "<a href='https://idrc.ocadu.ca/' rel='external'>An IDRC Project</a>",
@@ -23,7 +22,7 @@
 	"risks-slug": "risks",
 	"opportunities-slug": "opportunities",
 	"limitation": "Limitation",
-	"sectors": "Sectors",
+	"sector": "Sector",
 	"skip-to-content": "Skip to content",
 	"toc": "Table of Contents",
 	"page-navigation": "{{ title }} page navigation",
@@ -38,5 +37,11 @@
 	"cta-services": "Services",
 	"created-by": "Created by",
 	"examples-slug": "examples",
-	"menu": "menu"
+	"menu": "menu",
+	"examples-singular": "example",
+	"examples-plural": "examples",
+	"clear-filter": "clear filter",
+	"pagination-navigation": "pagination navigation",
+	"previous": "Previous",
+	"next": "Next"
 }

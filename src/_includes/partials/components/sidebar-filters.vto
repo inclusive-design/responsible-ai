@@ -1,0 +1,13 @@
+<div id="filters" class="filters sidebar flow">
+	<h2>{{ __ 'filters', {}, {lang, translations} }}</h2>
+    <fieldset>
+        <legend><h3>{{ __ 'sector', {}, {lang, translations} }}<h3></legend>
+        <ul id="filter-sector" class="sectors" role="list">
+            {{ for sector of ['education', 'employment', 'healthcare', 'services'] }}
+                <li>
+                    <input type="checkbox" id="{{ sector }}" name="sector" value="{{ sector }}" data-filter-key="sector"/> <label for="{{ sector }}">{{ __ sector, {}, {lang, translations} }}</label>
+                </li>
+            {{ /for }}
+        </ul>
+    </fieldset>
+</div>

@@ -1,3 +1,48 @@
 {{ layout "layouts/base.vto" { pageType: 'examples' } }}
 
+{{ set illustrativeExamples = collections['risks_'+lang]
+	.reduce(
+		(accumulator, currentItem) => {
+		const { index, title, examples } = currentItem.data;
+		Object.keys(examples).forEach(key => {
+		    examples[key].forEach(example => {
+		        accumulator.push({
+			        sector: key,
+		        	url: currentItem.url,
+					index,
+					title,
+					content: example
+		        });
+		      });
+		    });
+		   return accumulator;
+		},
+	 	[]
+	).toSorted((a, b) => a.sector.localeCompare(b.sector))
+}}
+
+<filter-container oninit filter-mode="all" data-paginate-results="10" data-page="1">
+{{ include 'partials/components/sidebar-filters.vto' }}
+
+<article class="article flow">
+	<h2 id="filtered-results" aria-live="polite" data-filter-results="{{ __ 'examples-singular', {}, {lang, translations} }}/{{ __ 'examples-plural', {}, {lang, translations} }}">{{ illustrativeExamples.length }} {{ __ 'examples-plural', {}, {lang, translations} }}</h2>
+	<h3 id="filter-applied">{{ __ 'applied-filters', {}, {lang, translations} }}</h3>
+	<div class="cluster cluster-sm" id="filter-tags"></div>
+
+{{ for example of illustrativeExamples }}
+	{{ include 'partials/components/example-card.vto' { example } }}
+{{ /for }}
+<nav data-pagination-navigation aria-label="{{ __ 'pagination-navigation', {}, {lang, translations} }}">
+	<ul role="list" class="pagination">
+	  <li><a class="button" data-variant="rounded" href="#" rel="prev"><i class="icon fa-solid fa-arrow-left"></i><span class="visually-hidden">{{ __ 'previous', {}, {lang, translations} }}</span></a></li>
+	  <li><a class="button" data-variant="rounded" href="#" rel="next"><span class="visually-hidden">{{ __ 'next', {}, {lang, translations} }}</span> <i class="icon fa-solid fa-arrow-right"></i></a></li>
+	  <template data-pagination-link>
+	    <li><a class="button" data-variant="rounded" href="#" data-page></a></li>
+	  </template>
+	</ul>
+</nav>
+</article>
+</filter-container>
+<template id="clear-button"><button class="button" data-variant="rounded"><span class="visually-hidden">{{ __ 'clear-filter', {}, {lang, translations} }}</span> <span class="label"></span> <i class="icon fa-solid fa-circle-xmark"></i></button></template>
+
 {{ /layout }}

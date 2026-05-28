@@ -1,0 +1,8 @@
+[data-pagination-navigation] ul {
+	display: flex;
+	justify-content: center;
+}
+
+[data-pagination-navigation] a {
+	min-width: var(--_form-control-height);
+}

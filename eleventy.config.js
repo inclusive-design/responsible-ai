@@ -81,6 +81,7 @@ export default function eleventy(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({ 'src/assets/styles': 'assets/styles' });
 	eleventyConfig.addPassthroughCopy({ 'src/assets/uploads': 'assets/uploads' });
 	eleventyConfig.addPassthroughCopy({ 'src/assets/icons': '/' });
+	eleventyConfig.addPassthroughCopy({ 'node_modules/@zachleat/filter-container/filter-container.js': '/assets/scripts/filter-container.js' });
 
 	eleventyConfig.addPlugin(IdAttributePlugin);
 
