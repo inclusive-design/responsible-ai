@@ -1,5 +1,17 @@
 # Changelog
 
+## [2026.5.5](https://github.com/inclusive-design/responsible-ai/compare/v2026.5.4...v2026.5.5) (2026-05-29)
+
+
+### Features
+
+* enable CMS editing of site metadata and translations ([#44](https://github.com/inclusive-design/responsible-ai/issues/44)) ([5c648c5](https://github.com/inclusive-design/responsible-ai/commit/5c648c57b97148c48974be040462b75fd9840ba0))
+
+
+### Bug Fixes
+
+* adjust badge spacing ([#42](https://github.com/inclusive-design/responsible-ai/issues/42)) ([e7baaba](https://github.com/inclusive-design/responsible-ai/commit/e7baabaa88eddaf017f3d6eb775aa76aec877e2b))
+
 ## [2026.5.4](https://github.com/inclusive-design/responsible-ai/compare/v2026.5.3...v2026.5.4) (2026-05-29)
 
 
