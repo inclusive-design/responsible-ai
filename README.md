@@ -1,16 +1,18 @@
-# standards.inclusivedesign.ca
+# Responsible Adoption of Disability-Inclusive AI
 
-[![BSD-3-Clause license](https://badgen.net/github/license/inclusive-design/standards.inclusivedesign.ca)](https://github.com/inclusive-design/standards.inclusivedesign.ca/blob/main/LICENSE)
-[![Latest release](https://badgen.net/github/release/inclusive-design/standards.inclusivedesign.ca)](https://github.com/inclusive-design/standards.inclusivedesign.ca/releases/latest)
-[![Crowdin](https://badges.crowdin.net/inclusive-standards/localized.svg)](https://crowdin.com/project/inclusive-standards)
+[![BSD-3-Clause license](https://badgen.net/github/license/inclusive-design/responsible-ai)](https://github.com/inclusive-design/responsible-ai/blob/main/LICENSE)
+[![Latest release](https://badgen.net/github/release/inclusive-design/responsible-ai)](https://github.com/inclusive-design/responsible-ai/releases/latest)
 
-Website for IDRC standards development work.
+Persons with disabilities experience both transformative benefits and significant risks from artificial intelligence.
+This resource covers opportunities, risks and mitigation strategies, along with risk examples in healthcare, education,
+employment and services.
 
 ## Release Process
 
 Changelogs and releases are handled by [release-please](https://github.com/googleapis/release-please-action). We use a
 modified versioning scheme based on [calendar versioning](https://calver.org/) in the form `YYYY.MM.MICRO` (where
-`MICRO`, the third and final number in the version, indicates a patch, starting at 0 within each month's sequence of releases).
+`MICRO`, the third and final number in the version, indicates a patch, starting at 0 within each month's sequence of
+releases).
 
 Prior to release, commit and push a single commit to bump the version appropriately:
 

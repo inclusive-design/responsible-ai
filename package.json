@@ -1,7 +1,7 @@
 {
 	"name": "@inclusive-design/responsible-ai",
 	"version": "2026.5.5",
-	"description": "",
+	"description": "Persons with disabilities experience both transformative benefits and significant risks from artificial intelligence. This resource covers opportunities, risks and mitigation strategies, along with risk examples in healthcare, education, employment and services.",
 	"main": "eleventy.config.js",
 	"type": "module",
 	"scripts": {
