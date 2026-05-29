@@ -252,3 +252,53 @@ collections:
                 name: example
                 widget: markdown
                 i18n: true
+
+singletons:
+  - label: Site Metadata
+    name: site
+    file: src/_data/site.json
+    icon: settings
+    i18n: true
+    fields:
+    - label: Title
+      name: title
+      widget: string
+      i18n: true
+    - label: Author
+      name: author
+      widget: string
+      i18n: true
+    - label: Description
+      name: description
+      widget: text
+      i18n: true
+  - label: Contact Information
+    name: contact
+    file: src/_data/contact.json
+    icon: map
+    fields:
+      - label: Email
+        name: email
+        widget: string
+        type: email
+      - label: Phone
+        name: phone
+        widget: string
+      - label: Address
+        name: address
+        widget: text
+  - label: Translations
+    label_singular: Translation
+    name: translations
+    icon: translate
+    editor:
+      preview: false
+    i18n:
+      initial_locales: all
+    file: src/_data/translations.json
+    fields:
+      - label: Translations
+        name: translations
+        widget: keyvalue
+        root: true
+        i18n: true
