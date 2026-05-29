@@ -5,6 +5,8 @@ import { VentoPlugin } from 'eleventy-plugin-vento';
 import fontAwesomePlugin from '@11ty/font-awesome';
 import fluidPlugin, { __ } from 'eleventy-plugin-fluid';
 import _ from 'lodash';
+import EleventyVitePlugin from '@11ty/eleventy-plugin-vite';
+import sugarcube from '@sugarcube-sh/vite';
 import parseTransform from './src/_transforms/parse-transform.js';
 import findTranslationKeyFilter from './src/_filters/find-translation-key-filter.js';
 import markdownFilter from './src/_filters/markdown-filter.js';
@@ -36,6 +38,11 @@ export default function eleventy(eleventyConfig) {
 				dir: 'ltr',
 				uioSlug: 'fr',
 			},
+		},
+	});
+	eleventyConfig.addPlugin(EleventyVitePlugin, {
+		viteOptions: {
+			plugins: [sugarcube()],
 		},
 	});
 
@@ -82,12 +89,8 @@ export default function eleventy(eleventyConfig) {
 
 	eleventyConfig.addTransform('parse', parseTransform);
 
-	eleventyConfig.addPassthroughCopy({ 'src/admin/config.yml': 'admin/config.yml' });
-	eleventyConfig.addPassthroughCopy({ 'src/assets/scripts': 'assets/scripts' });
-	eleventyConfig.addPassthroughCopy({ 'src/assets/styles': 'assets/styles' });
-	eleventyConfig.addPassthroughCopy({ 'src/assets/uploads': 'assets/uploads' });
-	eleventyConfig.addPassthroughCopy({ 'src/assets/icons': '/' });
-	eleventyConfig.addPassthroughCopy({ 'node_modules/@zachleat/filter-container/filter-container.js': '/assets/scripts/filter-container.js' });
+	eleventyConfig.addPassthroughCopy('src/assets');
+	eleventyConfig.addPassthroughCopy('public');
 
 	eleventyConfig.addPlugin(IdAttributePlugin);
 
@@ -101,7 +104,7 @@ export default function eleventy(eleventyConfig) {
 		dir: {
 			input: 'src',
 		},
-		templateFormats: ['vto', 'md', 'css', 'png', 'jpg', 'svg'],
+		templateFormats: ['vto', 'md'],
 		htmlTemplateEngine: 'vto',
 		markdownTemplateEngine: 'vto',
 	};
