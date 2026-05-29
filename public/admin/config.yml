@@ -9,7 +9,7 @@ backend:
     delete: 'chore(cms): delete "{{path}}"'
     uploadMedia: 'chore(cms): upload "{{path}}"'
     deleteMedia: 'chore(cms): delete "{{path}}"'
-media_folder: src/assets/uploads
+media_folder: public/assets/uploads
 public_folder: /assets/uploads
 app_title: Responsible AI
 

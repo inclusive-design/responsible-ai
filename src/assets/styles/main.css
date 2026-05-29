@@ -1,5 +1,4 @@
 @import url("./global/global.css");
-@import url("./variables.gen.css");
 @import url("./utilities/region.css");
 @import url("./utilities/visually-hidden.css");
 @import url("./blocks/prose.css");

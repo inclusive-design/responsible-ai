@@ -1,5 +1,5 @@
 /* eslint-disable import-x/no-unassigned-import */
-import './filter-container.js';
+import '@zachleat/filter-container';
 
 const filters = document.querySelector('#filters');
 const filterOptions = filters.querySelectorAll('input[type=\'checkbox\']');
