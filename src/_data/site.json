@@ -1,12 +1,12 @@
 {
-	"en": {
-		"title": "Responsible Adoption of Disability-Inclusive AI",
-		"description": "TODO",
-		"author": "Inclusive Design Research Centre"
-	},
-	"fr": {
-		"title": "Adoption responsable d'une IA inclusive pour les personnes handicapées",
-		"description": "TODO",
-		"author": "Inclusive Design Research Centre"
-	}
+  "en": {
+    "title": "Responsible Adoption of Disability-Inclusive AI",
+    "author": "Inclusive Design Research Centre",
+    "description": "Persons with disabilities experience both transformative benefits and significant risks from artificial intelligence. This resource covers opportunities, risks and mitigation strategies, along with risk examples in healthcare, education, employment and services."
+  },
+  "fr": {
+    "title": "Adoption responsable d'une IA inclusive pour les personnes handicapées",
+    "author": "Inclusive Design Research Centre",
+    "description": "Les personnes handicapées bénéficient d'avantages considérables liés à l'intelligence artificielle, mais y voient également des risques importants. Cette ressource aborde les opportunités, les risques et les stratégies d'atténuation, et propose des exemples de risques dans les domaines de la santé, de l'éducation, de l'emploi et des services."
+  }
 }
