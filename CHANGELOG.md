@@ -1,5 +1,13 @@
 # Changelog
 
+## [2026.5.4](https://github.com/inclusive-design/responsible-ai/compare/v2026.5.3...v2026.5.4) (2026-05-29)
+
+
+### Features
+
+* add short title field for risks (resolves [#35](https://github.com/inclusive-design/responsible-ai/issues/35)) ([#36](https://github.com/inclusive-design/responsible-ai/issues/36)) ([ba4abe7](https://github.com/inclusive-design/responsible-ai/commit/ba4abe7f4293a8b1c5eefcbe0233d535065e5fca))
+* switch to Vite plugin ([#38](https://github.com/inclusive-design/responsible-ai/issues/38)) ([4d7ca69](https://github.com/inclusive-design/responsible-ai/commit/4d7ca6968a47bb6c77637ea0bfcfe9ff771aff8f))
+
 ## [2026.5.3](https://github.com/inclusive-design/responsible-ai/compare/v2026.5.2...v2026.5.3) (2026-05-28)
 
 
