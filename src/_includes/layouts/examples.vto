@@ -3,13 +3,13 @@
 {{ set illustrativeExamples = collections['risks_'+lang]
 	.reduce(
 		(accumulator, currentItem) => {
-		const { index, title, examples } = currentItem.data;
+		const { index, shortTitle, title, examples } = currentItem.data;
 		Object.keys(examples).forEach(key => {
 		    examples[key].forEach(example => {
 		        accumulator.push({
 			        sector: key,
 		        	url: currentItem.url,
-					risk: `${index} ${title}`,
+					risk: `${index} ${shortTitle ?? title}`,
 					title: example.title,
 					example: example.example
 		        });

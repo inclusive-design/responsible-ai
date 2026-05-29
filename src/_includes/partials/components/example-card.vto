@@ -1,7 +1,7 @@
 <div class="card" data-filter-sector="{{ example.sector }}">
 	{{ if example.title }}
 	<div class="card-header">
-		<h4><a href="{{ example.url }}{{ example.example |> linkFragment }}">{{ example.title || 'Untitled' }}</a></h4>
+		<h4><a href="{{ example.url }}{{ example.example |> linkFragment }}">{{ example.title }}</a></h4>
 	</div>
 	{{ /if }}
     <div class="card-content">
