@@ -1,5 +1,17 @@
 # Changelog
 
+## [2026.6.0](https://github.com/inclusive-design/responsible-ai/compare/v2026.5.5...v2026.6.0) (2026-06-02)
+
+
+### Features
+
+* logo, icons and header tweaks ([#47](https://github.com/inclusive-design/responsible-ai/issues/47)) ([5f1f834](https://github.com/inclusive-design/responsible-ai/commit/5f1f834593fa6b13a32d8b39643bd9219231e79c))
+
+
+### Bug Fixes
+
+* remove extra spacing before address (fix [#45](https://github.com/inclusive-design/responsible-ai/issues/45)) ([#49](https://github.com/inclusive-design/responsible-ai/issues/49)) ([767d84f](https://github.com/inclusive-design/responsible-ai/commit/767d84ff73e89dfd64537d4f3162f7e7d5d35dfd))
+
 ## [2026.5.5](https://github.com/inclusive-design/responsible-ai/compare/v2026.5.4...v2026.5.5) (2026-05-29)
 
 
