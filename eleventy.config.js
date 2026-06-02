@@ -90,7 +90,9 @@ export default function eleventy(eleventyConfig) {
 	eleventyConfig.addTransform('parse', parseTransform);
 
 	eleventyConfig.addPassthroughCopy('src/assets');
-	eleventyConfig.addPassthroughCopy('public');
+	eleventyConfig.addPassthroughCopy('public/admin');
+	eleventyConfig.addPassthroughCopy('public/assets');
+	eleventyConfig.addPassthroughCopy({ 'public/icons': '/' });
 
 	eleventyConfig.addPlugin(IdAttributePlugin);
 

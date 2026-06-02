@@ -1,7 +1,7 @@
 .skip-container {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: var(--space-md);
 	width: 100%;
 }
 
@@ -15,6 +15,7 @@
     position: absolute;
     width: 1px;
     white-space: nowrap;
+    z-index: 99;
 }
 
 .skip:focus {

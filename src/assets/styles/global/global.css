@@ -186,6 +186,10 @@ a code {
 	text-decoration: underline;
 }
 
+.nav-link:first-of-type a {
+	margin-inline-start: calc(-1 * var(--_padding-inline));
+}
+
 /* ============================================
    Lists
    ============================================ */
@@ -218,6 +222,10 @@ dt {
     margin-block: 0;
     padding-inline: 0;
     list-style: none;
+}
+
+[role="list"] li {
+	margin-inline-start: 0;
 }
 
 /* ============================================
@@ -552,6 +560,15 @@ svg:not([class]) {
 svg[role="img"] {
     width: revert;
     height: revert;
+}
+
+/* ============================================
+	Landmarks
+   ============================================ */
+
+header {
+	border-bottom: var(--border-width-thin) solid var(--color-border-loud);
+	padding-block: var(--space-lg) var(--space-xs);
 }
 
 /* ============================================
