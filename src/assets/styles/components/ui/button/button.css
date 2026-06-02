@@ -58,6 +58,10 @@
     font-size: var(--text-lg);
 }
 
+.button[data-size="xl"] {
+    font-size: var(--text-xl);
+}
+
 .button[data-appearance="outlined"] {
     background-color: transparent;
     color: var(--color-on-normal, var(--color-neutral-on-normal));
@@ -106,4 +110,8 @@
     box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-fill-loud) 25%, transparent);
     border-color: transparent;
     outline: none;
+}
+
+.button[rel="home"] {
+	margin-inline-start: calc(-1 * var(--_padding-inline));
 }

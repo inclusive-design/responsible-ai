@@ -1,8 +1,6 @@
 <header data-pagefind-ignore>
     <div class="skip-container">
-	    <div class="wrapper">
-	        <a class="skip" href="#main">{{ __ 'skip-to-content', {}, {lang, translations} }}</a>
-	    </div>
+        <a class="skip" href="#main">{{ __ 'skip-to-content', {}, {lang, translations} }}</a>
     </div>
     <div class="header flow wrapper">
         <div class="repel">
@@ -19,7 +17,7 @@
         </div>
         <nav aria-label="{{ __ 'menu', {}, {lang, translations} }}" class="repel">
 	       	{{ set navItems = collections[lang] |> eleventyNavigation }}
-	        <a class="button" data-size="lg" data-appearance="ghost" rel="home" href="{{ navItems[0].url }}">{{ navItems[0].title }}</a>
+	        <a class="button" data-size="xl" data-appearance="ghost" rel="home" href="{{ navItems[0].url }}">{{ include 'svg/logo.svg' }} {{ navItems[0].title }}</a>
 
 			<ul role="list" class="cluster cluster-sm">
 				{{ for navItem of navItems[0].children }}
