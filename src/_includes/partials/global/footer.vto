@@ -15,14 +15,14 @@
                     </strong><br />
                     {{ contact.phone }}
                 </p>
-                <p>
+                <div>
                     <strong>
                         {{ __ 'contact-us-address', {}, {lang, translations} }}
                     </strong>
                     <address>
                     {{ contact.address |> markdown |> safe }}
                     </address>
-                </p>
+                </div>
         </section>
 
         <section class="flow">
