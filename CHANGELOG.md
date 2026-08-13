@@ -1,5 +1,17 @@
 # Changelog
 
+## [2026.8.0](https://github.com/inclusive-design/responsible-ai/compare/v2026.6.0...v2026.8.0) (2026-08-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency markdown-it to v15 ([#52](https://github.com/inclusive-design/responsible-ai/issues/52)) ([85eab2a](https://github.com/inclusive-design/responsible-ai/commit/85eab2a49dcce61475381e7365980999370b2510))
+
+
+### Miscellaneous Chores
+
+* **release:** bump version ([8f74515](https://github.com/inclusive-design/responsible-ai/commit/8f745158a17abb75325113cd4adccfe8e527e3a7))
+
 ## [2026.6.0](https://github.com/inclusive-design/responsible-ai/compare/v2026.5.5...v2026.6.0) (2026-06-02)
 
 
