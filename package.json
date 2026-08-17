@@ -28,7 +28,7 @@
 		"@11ty/font-awesome": "^1.0.1",
 		"@zachleat/filter-container": "nedatidrc/filter-container#feat/paginated-results",
 		"eleventy-plugin-fluid": "^3.2.0",
-		"eleventy-plugin-vento": "^5.0.0",
+		"eleventy-plugin-vento": "^6.0.0",
 		"i18n-js": "^4.5.3",
 		"infusion": "^4.8.0",
 		"lodash": "^4.18.1",
