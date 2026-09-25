@@ -1,5 +1,17 @@
 # Changelog
 
+## [2026.9.0](https://github.com/inclusive-design/responsible-ai/compare/v2026.8.0...v2026.9.0) (2026-09-25)
+
+
+### Features
+
+* adjust slug configuration to remove deprecation ([#59](https://github.com/inclusive-design/responsible-ai/issues/59)) ([57f3ada](https://github.com/inclusive-design/responsible-ai/commit/57f3ada5a2f1821dd68ade1f77b66b1d70c2352a))
+
+
+### Miscellaneous Chores
+
+* **release:** bump version ([4a0c68c](https://github.com/inclusive-design/responsible-ai/commit/4a0c68c9078a46bb6fa025f031dcb868b6c4056a))
+
 ## [2026.8.0](https://github.com/inclusive-design/responsible-ai/compare/v2026.6.0...v2026.8.0) (2026-08-13)
 
 
