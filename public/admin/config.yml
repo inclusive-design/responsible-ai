@@ -33,7 +33,7 @@ collections:
       structure: multiple_folders
     folder: src/collections/pages/
     extension: md
-    slug: "{{fields._slug | localize}}"
+    slug: { editable: true, i18n: true }
     view_filters:
       - label: Drafts
         field: draft
@@ -82,7 +82,7 @@ collections:
         widget: hidden
         i18n: duplicate
         default: layouts/base
-        required: true
+
       - label: Excerpt
         name: excerpt
         widget: text
@@ -288,7 +288,6 @@ singletons:
         name: address
         widget: text
   - label: Translations
-    label_singular: Translation
     name: translations
     icon: translate
     editor:
