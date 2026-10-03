@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.10.0](https://github.com/inclusive-design/responsible-ai/compare/v2026.9.0...v2026.10.0) (2026-10-03)
+
+
+### Miscellaneous Chores
+
+* **release:** bump version ([224a892](https://github.com/inclusive-design/responsible-ai/commit/224a89285d47c3149e4b589e6d3512448ebbf3a7))
+
 ## [2026.9.0](https://github.com/inclusive-design/responsible-ai/compare/v2026.8.0...v2026.9.0) (2026-09-25)
 
 
