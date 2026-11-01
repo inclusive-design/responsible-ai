@@ -1,5 +1,18 @@
 # Changelog
 
+## [2026.11.0](https://github.com/inclusive-design/responsible-ai/compare/v2026.9.0...v2026.11.0) (2026-11-01)
+
+
+### Bug Fixes
+
+* switch auth base_url ([3c17950](https://github.com/inclusive-design/responsible-ai/commit/3c17950faa3ac5bf5707d3abd729af0054cc1f42))
+
+
+### Miscellaneous Chores
+
+* **release:** bump version ([12caacf](https://github.com/inclusive-design/responsible-ai/commit/12caacfd08827a15f6ff26e09c502032927886c6))
+* **release:** bump version ([224a892](https://github.com/inclusive-design/responsible-ai/commit/224a89285d47c3149e4b589e6d3512448ebbf3a7))
+
 ## [2026.9.0](https://github.com/inclusive-design/responsible-ai/compare/v2026.8.0...v2026.9.0) (2026-09-25)
 
 
