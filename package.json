@@ -26,7 +26,7 @@
 		"@11ty/eleventy-navigation": "^1.0.0",
 		"@11ty/eleventy-plugin-vite": "^8.0.0",
 		"@11ty/font-awesome": "^1.0.1",
-		"@zachleat/filter-container": "nedatidrc/filter-container#feat/paginated-results",
+		"@zachleat/filter-container": "inclusive-design/filter-container#feat/paginated-results",
 		"eleventy-plugin-fluid": "^3.2.0",
 		"eleventy-plugin-vento": "^5.0.0",
 		"i18n-js": "^4.5.3",
